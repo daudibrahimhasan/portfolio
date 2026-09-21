@@ -200,13 +200,7 @@ Current `view` values include:
 
 Do not create a new view name without adding all required state, template conditionals, navigation behavior, mobile behavior, history behavior if needed, and visual QA.
 
-Internal case studies use `openCase(slug)`. External projects use explicit handlers in `renderVals()`. The current external projects are:
-
-- `cam-cabinet` is the internal slot used by SupportGuard and retains the old external URL until a real SupportGuard URL is supplied.
-- `saveside` is the internal slot used by DocOps Approval Agent and retains the old external URL until a real DocOps URL is supplied.
-- `cookbookly` is the legacy internal slot used by triONDA and opens `https://daudibrahimhasan.github.io/triONDA/`. MarkLens remains a separate item in the Papers section.
-
-Do not add a slug to `externalCaseSlugs` unless it truly opens an external site. Do not create empty case data for an external-only project.
+Every project card opens an internal case study with `openCase(slug)`. Keep `externalCaseSlugs` empty unless the user explicitly restores direct external navigation. SupportGuard uses the legacy `cam-cabinet` slot, DocOps uses `saveside`, and triONDA uses `cookbookly`. MarkLens remains a separate item in the Papers section.
 
 ## 10. Adding a normal project card
 
@@ -220,9 +214,15 @@ Add one object to `state.projects` in `index.html`:
   comingSoon: false,
   thumbImg: './assets/project-slug-thumb.webp',
   coverImg: './assets/project-slug-cover.webp',
+  galleryImages: [
+    { url: './assets/project-detail-1.webp', label: 'Accessible image description' },
+    { url: './assets/project-detail-2.webp', label: 'Accessible image description', fit: 'contain' }
+  ],
   tags: ['AI Agents', 'RAG']
 }
 ```
+
+`galleryImages` is optional. Use it only when there are additional real project screenshots. The main `coverImg` remains the first large image; gallery images appear below it in the same case-study visual system. Use `fit: 'contain'` only for logos, diagrams, or benchmark graphics that should not be cropped.
 
 Rules:
 

@@ -860,6 +860,14 @@
           <image-slot id="case-cover-{{ activeCaseSlug }}" shape="rounded" radius="20" style="width:min(880px,calc(100vw - 64px));margin-left:calc(50% - min(440px,calc(50vw - 32px)));box-sizing:border-box;aspect-ratio:16/9;margin-bottom:56px" placeholder="Drop the case study cover image"></image-slot>
         </sc-if>
 
+        <sc-if value="{{ caseHasGallery }}" hint-placeholder-val="{{ false }}">
+          <div style="width:min(880px,calc(100vw - 64px));margin-left:calc(50% - min(440px,calc(50vw - 32px)));box-sizing:border-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px;margin-top:-32px;margin-bottom:56px">
+            <sc-for list="{{ caseGallery }}" as="img" hint-placeholder-count="2">
+              <div role="img" aria-label="{{ img.label }}" style="width:100%;aspect-ratio:16/9;background-color:{{ theme.surface }};background-image:{{ img.css }};background-size:{{ img.fit }};background-position:center;background-repeat:no-repeat;border-radius:16px;border:1px solid {{ theme.border }};box-sizing:border-box"></div>
+            </sc-for>
+          </div>
+        </sc-if>
+
 <h2 id="case-overview" style="font-family: 'Perfectly Nineties',serif; font-weight: 400; font-size: 28px; color: #1C1C24; margin: 0 0 14px; letter-spacing: 0.6px">Overview</h2>
         <p style="font-size: 15px; line-height: 1.7; color: {{ theme.body }}; margin: 0 0 48px; font-weight: 400">{{ caseOverview }}</p>
         <sc-if value="{{ caseHasDetailedContent }}" hint-placeholder-val="{{ false }}">
@@ -1576,7 +1584,7 @@ class Component extends DCLogic {
       { slug: 'study-groups', title: 'whyLayer', blurb: 'A decision-intelligence system for evidence-backed GO/NO-GO recommendations.', comingSoon: false, thumbImg: './assets/whylayer-home.png', coverImg: './assets/whylayer-home.png' },
       { slug: 'study-party', title: 'CiteXai', blurb: 'An AI citation-verification platform for checking evidence behind generated claims.', comingSoon: false, thumbImg: './assets/citexai-home.png' },
       { slug: 'bungalow', title: 'skeletree', blurb: 'A repository context-map tool for AI coding agents.', comingSoon: false, thumbImg: './assets/skeletree-terminal.png', coverImg: './assets/skeletree-terminal.png' },
-      { slug: 'loop', title: 'Ayah AI', blurb: 'An offline Quran recitation identification app using on-device speech recognition.', comingSoon: false, thumbImg: './assets/loop-thumb.webp' },
+      { slug: 'loop', title: 'Ayah AI', blurb: 'An offline Quran recitation identification app using on-device speech recognition.', comingSoon: false, thumbImg: './assets/ayah-home.png' },
       { slug: 'cookbookly', title: 'triONDA', blurb: 'A World Cup 2026 machine-learning predictor for match outcomes, scorelines and likely goalscorers.', comingSoon: false, thumbImg: './assets/trionda-home.png', tags: ['Machine Learning', 'Sports Analytics', 'Model Evaluation'] }
     ],
     faqs: [
@@ -1587,8 +1595,22 @@ class Component extends DCLogic {
       { q: 'What do you research?', a: 'AI safety and evaluation, monitor reliability, citation verification, agent behavior and reproducible research systems.', open: false }
     ],
     cases: {
+      'cam-cabinet': {
+        title: 'SupportGuard', subtitle: 'AI support system', tags: ['AI Agents', 'RAG', 'Human-in-the-Loop'], coverImg: './assets/supportguard-approval-queue.png',
+        galleryImages: [
+          { url: './assets/supportguard-dashboard.png', label: 'SupportGuard dashboard' },
+          { url: './assets/supportguard-evaluations.png', label: 'SupportGuard evaluation results' }
+        ],
+        role: 'Designed and built SupportGuard from the support workflow and retrieval layer through the evaluation and approval interface.',
+        impact: 'SupportGuard answers from an approved knowledge base, shows supporting citations and sends risky or uncertain requests to human review instead of handling them blindly.',
+        overview: 'An AI customer-support system with RAG, citations, confidence scoring, evaluation and human escalation.'
+      },
       saveside: {
-        title: 'DocOps Approval Agent', subtitle: 'AI document workflow', tags: ['AI Agents', 'OCR', 'Document Processing', 'Human Approval'],
+        title: 'DocOps Approval Agent', subtitle: 'AI document workflow', tags: ['AI Agents', 'OCR', 'Document Processing', 'Human Approval'], coverImg: './assets/docops-needs-review.png',
+        galleryImages: [
+          { url: './assets/docops-approved.png', label: 'DocOps approved contract decision' },
+          { url: './assets/docops-flagged.png', label: 'DocOps flagged document decision' }
+        ],
         role: 'Built the document pipeline, quality checks, OCR flow, structured extraction, policy validation and review interface.',
         impact: 'The system separates model extraction from deterministic business rules and routes low-confidence documents to human approval before a decision is made.',
         overview: 'An AI document approval system for invoices and contracts.'
@@ -1764,6 +1786,10 @@ class Component extends DCLogic {
       },
       bungalow: {
         title: 'skeletree', subtitle: 'Developer tool', tags: ['MCP', 'Python', 'Developer Tools'], coverImg: './assets/skeletree-terminal.png',
+        galleryImages: [
+          { url: './assets/skeletree-token-savings.png', label: 'skeletree token savings benchmark' },
+          { url: './assets/skeletree-logo.png', label: 'skeletree logo', fit: 'contain' }
+        ],
         role: 'Built and published a CLI that generates token-efficient repository maps, dependency graphs and code signatures across multiple languages.',
         impact: 'skeletree gives AI coding agents a compact view of a codebase and includes MCP integration, incremental caching and GitHub Actions CI.',
         overview: 'A repository context-map tool for AI coding agents.',
@@ -1830,7 +1856,7 @@ class Component extends DCLogic {
         reflectionExtra: ['In a fast moving environment with no extra resources, I took the initiative to create the structure we were missing. What started as a side effort became foundational infrastructure that made our work faster, more consistent, and way more scalable.'],
       },
       loop: {
-        title: 'Ayah AI', subtitle: 'Personal project', tags: ['Speech Recognition', 'ONNX', 'React'], coverImg: './assets/loop-thumb.webp',
+        title: 'Ayah AI', subtitle: 'Personal project', tags: ['Speech Recognition', 'ONNX', 'React'], coverImg: './assets/ayah-home.png',
         role: 'Built the offline-first application, on-device Whisper inference, local model caching and Arabic matching workflow.',
         impact: 'Ayah AI runs speech recognition entirely on the device, so the user’s audio does not need to leave the device.',
         overview: 'An offline Quran recitation identification app using on-device speech recognition.',
@@ -1916,6 +1942,15 @@ class Component extends DCLogic {
           'Loop explores how family coordination tools could move beyond simple shared calendars toward role-aware collaboration systems. At its core, the concept focuses on one goal: help families stay connected and organized while respecting the different responsibilities each member holds.'
         ],
         reflectionStrengths: ['Systems thinking', 'Behavior driven design', 'Simplifying complex coordination into intuitive experiences']
+      },
+      cookbookly: {
+        title: 'triONDA', subtitle: 'Machine-learning match predictor', tags: ['Machine Learning', 'Sports Analytics', 'Model Evaluation'], coverImg: './assets/trionda-home.png',
+        galleryImages: [
+          { url: './assets/trionda-bracket.png', label: 'triONDA predicted tournament bracket' }
+        ],
+        role: 'Built the Python prediction pipeline, feature engineering, validation workflow and interactive tournament interface.',
+        impact: 'Compared a larger stacked ensemble against a simpler Elo baseline on 147 historical tournament matches, making the model limits visible instead of hiding them behind a single prediction score.',
+        overview: 'A World Cup 2026 prediction pipeline for match outcomes, scorelines and likely goalscorers using historical results, point-in-time rankings, Elo, player ratings and squad data.'
       },
 
     }
@@ -3337,17 +3372,10 @@ class Component extends DCLogic {
     };
     const showComingSoon = this.props.showComingSoon ?? true;
     const roleLabels = { 'cam-cabinet': 'AI Systems Engineer', saveside: 'AI Agent Developer and Full-Stack Engineer', 'study-groups': 'AI Systems Engineer', 'study-party': 'AI Systems Engineer', bungalow: 'AI Developer and Tooling Engineer', loop: 'AI/ML Engineer', cookbookly: 'AI/ML Engineer' };
-    const countExternalView = (slug) => {
-      const total = (this.state.projects || []).filter((p) => !p.comingSoon).length;
-      this.kiwiStats().then((m) => m.recordCaseStudyView(slug, total));
-    };
-    const openSaveside = () => { countExternalView('saveside'); window.open('https://www.saveside.app/', '_blank', 'noopener'); };
-    const openCamCabinet = () => { countExternalView('cam-cabinet'); window.open('https://camcabinet.vercel.app/', '_blank', 'noopener'); };
-    const openTrionda = () => { countExternalView('cookbookly'); window.open('https://daudibrahimhasan.github.io/triONDA/', '_blank', 'noopener'); };
-    const withGo = (arr) => arr.map((p) => ({ ...p, go: p.slug === 'cam-cabinet' ? openCamCabinet : (p.comingSoon ? null : (p.slug === 'saveside' ? openSaveside : (p.slug === 'cookbookly' ? openTrionda : () => this.openCase(p.slug)))) }));
+    const withGo = (arr) => arr.map((p) => ({ ...p, go: p.comingSoon || !s.cases[p.slug] ? null : () => this.openCase(p.slug) }));
     const visibleProjects = s.projects;
     const allProjects = withGo(visibleProjects);
-    const externalCaseSlugs = ['cam-cabinet', 'saveside', 'cookbookly'];
+    const externalCaseSlugs = [];
     const internalCases = visibleProjects.filter((p) => !p.comingSoon && externalCaseSlugs.indexOf(p.slug) === -1 && !!s.cases[p.slug]);
     const caseNavIdx = internalCases.findIndex((p) => p.slug === s.activeCase);
     const caseNavPrev = caseNavIdx >= 0 && internalCases.length > 1 ? internalCases[(caseNavIdx - 1 + internalCases.length) % internalCases.length] : null;
@@ -3367,7 +3395,7 @@ class Component extends DCLogic {
         detailsMaxH: hovered ? '120px' : '0px',
         isSaveside: false,
         roleLabel: roleLabels[p.slug] || ((s.cases[p.slug] && s.cases[p.slug].subtitle) || ''),
-        ctaLabel: p.slug === 'cookbookly' ? 'View project →' : (p.slug === 'saveside' ? 'Try it out →' : (p.slug === 'cam-cabinet' ? 'View project →' : 'View case study →')),
+        ctaLabel: 'View case study →',
         ctaLock: false,
         hasReel: !!p.reel,
         hasThumbImg: !!p.thumbImg && !p.reel,
@@ -3417,7 +3445,7 @@ class Component extends DCLogic {
         rotate: [-1.6, 1.4, -1.1, 1.8][i % 4],
         isSaveside: false,
         roleLabel: roleLabels[p.slug] || ((s.cases[p.slug] && s.cases[p.slug].subtitle) || ''),
-        ctaLabel: p.slug === 'cookbookly' ? 'View project →' : (p.slug === 'saveside' ? 'Try it out →' : (p.slug === 'cam-cabinet' ? 'View project →' : 'View case study →')),
+        ctaLabel: 'View case study →',
         ctaLock: false,
         hasReel: !!p.reel,
         hasThumbImg: !!p.thumbImg && !p.reel,
@@ -3432,7 +3460,7 @@ class Component extends DCLogic {
     const caseProjectsOrdered = allProjects.filter((p) => !p.comingSoon);
     const curIdx = caseProjectsOrdered.findIndex((p) => p.slug === s.activeCase);
     const nextProjectRaw = curIdx >= 0 && caseProjectsOrdered.length > 1 ? caseProjectsOrdered[(curIdx + 1) % caseProjectsOrdered.length] : null;
-    const nextProject = nextProjectRaw ? { ...nextProjectRaw, go: nextProjectRaw.slug === 'saveside' ? openSaveside : (nextProjectRaw.slug === 'cam-cabinet' ? openCamCabinet : (nextProjectRaw.slug === 'cookbookly' ? openTrionda : () => this.openCase(nextProjectRaw.slug))), hasThumbImg: !!nextProjectRaw.thumbImg, noThumbImg: !nextProjectRaw.thumbImg, thumbCss: nextProjectRaw.thumbImg ? 'url("' + nextProjectRaw.thumbImg + '")' : 'none' } : null;
+    const nextProject = nextProjectRaw ? { ...nextProjectRaw, go: () => this.openCase(nextProjectRaw.slug), hasThumbImg: !!nextProjectRaw.thumbImg, noThumbImg: !nextProjectRaw.thumbImg, thumbCss: nextProjectRaw.thumbImg ? 'url("' + nextProjectRaw.thumbImg + '")' : 'none' } : null;
 
     const starSizes = [1, 1.5, 2, 2.5, 3, 4];
     const varySize = (i, seed) => starSizes[(i * 7 + seed) % starSizes.length];
@@ -3945,6 +3973,8 @@ class Component extends DCLogic {
       isNotStudyGroupsCover: !(activeCaseData && activeCaseData.coverImg),
       caseCoverImg: activeCaseData ? activeCaseData.coverImg : '',
       caseCoverCss: (activeCaseData && activeCaseData.coverImg) ? 'url("' + activeCaseData.coverImg + '")' : 'none',
+      caseHasGallery: !!(activeCaseData && activeCaseData.galleryImages && activeCaseData.galleryImages.length),
+      caseGallery: (activeCaseData && activeCaseData.galleryImages ? activeCaseData.galleryImages : []).map((img) => ({ ...img, css: 'url("' + img.url + '")', fit: img.fit || 'cover' })),
       caseTitle: activeCaseData ? activeCaseData.title : '',
       caseSubtitle: activeCaseData ? activeCaseData.subtitle : '',
       caseTags: activeCaseData ? activeCaseData.tags : [],
@@ -3953,11 +3983,11 @@ class Component extends DCLogic {
       caseOverview: activeCaseData ? activeCaseData.overview : '',
       caseHasDetailedContent: false,
       caseProblemPoints: activeCaseData && activeCaseData.problemPoints ? activeCaseData.problemPoints : [],
-      caseProblemIntro: activeCaseData ? activeCaseData.problemIntro : '',
-      caseOpportunity: activeCaseData ? activeCaseData.opportunity : '',
+      caseProblemIntro: activeCaseData && activeCaseData.problemIntro ? activeCaseData.problemIntro : '',
+      caseOpportunity: activeCaseData && activeCaseData.opportunity ? activeCaseData.opportunity : '',
       caseHasScope: !!(activeCaseData && activeCaseData.scopeReach && activeCaseData.scopeReach.length),
       caseScope: activeCaseData && activeCaseData.scopeReach ? activeCaseData.scopeReach : [],
-      caseOwned: activeCaseData ? activeCaseData.owned : [],
+      caseOwned: activeCaseData && activeCaseData.owned ? activeCaseData.owned : [],
       workProjectsLeft,
       workProjectsRight,
       toggleBobi: (e) => this.toggleBobi(e),
@@ -3968,7 +3998,7 @@ class Component extends DCLogic {
       bobiImgScale: s.bobiHovered ? 'scale(1.05)' : 'scale(1)',
       bobiRevealTransform: s.bobiHovered ? 'translateY(0)' : 'translateY(100%)',
       bobiRevealOpacity: s.bobiHovered ? 1 : 0,
-      caseObjectives: activeCaseData ? activeCaseData.objectives : [],
+      caseObjectives: activeCaseData && activeCaseData.objectives ? activeCaseData.objectives : [],
       caseShowObjectivesSolution: s.activeCase !== 'bungalow' && s.activeCase !== 'loop',
       caseHasImpactHighlights: !!(activeCaseData && activeCaseData.impactHighlights),
       caseImpactWorkflow: activeCaseData && activeCaseData.impactHighlights ? activeCaseData.impactHighlights.workflow : [],
@@ -3983,7 +4013,7 @@ class Component extends DCLogic {
       caseObservationsRightLabel: (activeCaseData && activeCaseData.observations && activeCaseData.observations.rightLabel) || 'Strategic Design Direction',
       caseObservationsLeft: activeCaseData && activeCaseData.observations ? activeCaseData.observations.left : [],
       caseObservationsRight: activeCaseData && activeCaseData.observations ? activeCaseData.observations.right : [],
-      caseSolution: (activeCaseData ? activeCaseData.solution : []).map((sol, i) => ({
+      caseSolution: (activeCaseData && activeCaseData.solution ? activeCaseData.solution : []).map((sol, i) => ({
         ...sol,
         listLabel: sol.listLabel || 'Tradeoff',
         paragraphLabel: sol.paragraphLabel || 'Design Thinking',
@@ -3997,8 +4027,8 @@ class Component extends DCLogic {
         select: () => this.setState({ solutionActiveIndex: i })
       })),
       caseSolutionActive: activeCaseData && activeCaseData.solution ? { ...(activeCaseData.solution[s.solutionActiveIndex] || activeCaseData.solution[0]), listLabel: (activeCaseData.solution[s.solutionActiveIndex] || activeCaseData.solution[0]).listLabel || 'Tradeoff', paragraphLabel: (activeCaseData.solution[s.solutionActiveIndex] || activeCaseData.solution[0]).paragraphLabel || 'Design Thinking' } : null,
-      caseOutcomes: activeCaseData ? activeCaseData.outcomes : [],
-      caseReflection: activeCaseData ? activeCaseData.reflection : '',
+      caseOutcomes: activeCaseData && activeCaseData.outcomes ? activeCaseData.outcomes : [],
+      caseReflection: activeCaseData && activeCaseData.reflection ? activeCaseData.reflection : '',
       caseReflectionExtra: activeCaseData && activeCaseData.reflectionExtra ? activeCaseData.reflectionExtra : [],
       caseReflectionStrengths: activeCaseData && activeCaseData.reflectionStrengths ? activeCaseData.reflectionStrengths : [],
       caseHasKpis: !!(activeCaseData && activeCaseData.kpis && activeCaseData.kpis.length),
