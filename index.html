@@ -1291,7 +1291,7 @@
         <div style="display:flex;flex-direction:column;gap:12px;text-align:left">
           
           <a href="{{ calendlyUrl }}" target="_blank" rel="noopener" style-hover="transform: translateY(-8px); box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.05);" style="display: flex; align-items: center; gap: 16px; background: {{ theme.surfaceWarm }}; border-radius: 16px; padding: 20px 24px; text-decoration: none; transition: transform 0.3s cubic-bezier(0.4,0,0.2,1),box-shadow 0.3s ease; border-width: 1px; border-style: solid; border-color: #E0E1EA">
-            <span style="font-size:16px;font-weight:500;color:{{ theme.body }}">Calendly</span>
+            <span style="font-size:16px;font-weight:500;color:{{ theme.body }}">Cal.com</span>
             <span style="margin-left:auto;font-size:15px;color:{{ theme.body }};display:flex;align-items:center;gap:6px">Book a 30 min meeting ↗</span>
           </a><a href="mailto:{{ contactEmail }}" style-hover="transform: translateY(-8px); box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.05);" style="display: flex; align-items: center; gap: 16px; background: {{ theme.surfaceWarm }}; border-radius: 16px; padding: 20px 24px; text-decoration: none; transition: transform 0.3s cubic-bezier(0.4,0,0.2,1),box-shadow 0.3s ease; border-width: 1px; border-style: solid; border-color: #E0E1EA">
             <span style="font-size:16px;font-weight:500;color:{{ theme.body }}">Contact</span>
@@ -4244,7 +4244,7 @@ class Component extends DCLogic {
         return { label, bottom: i * 34, spineColor: spineColors[i % spineColors.length], transform: `rotate(${r.rot}deg)` };
       }),
       contactEmail: this.props.contactEmail ?? 'daudibrahimhasan@gmail.com',
-      calendlyUrl: this.props.calendlyUrl ?? 'https://calendly.com/brookiebeswick/30min'
+      calendlyUrl: this.props.calendlyUrl ?? 'https://cal.com/daud-ibrahim-pzuxyh/30min'
     };
   }
 }
