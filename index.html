@@ -587,7 +587,7 @@
       </section>
       <section style="padding: 24px 96px 96px; max-width: 760px; margin: 0 auto; padding-right: {{ padH48 }}; padding-left: {{ padH48 }}">
         <div style="display:flex;flex-direction:column;gap:28px">
-          <a href="https://www.cozyeating.app" target="_blank" rel="noopener" onMouseEnter="{{ cozyHoverOn }}" onMouseLeave="{{ cozyHoverOff }}" style="display:block;text-decoration:none;position:relative;border:1px solid {{ theme.border }};border-radius:16px;padding:12px;transform:rotate(-0.3deg);transition:transform 0.3s cubic-bezier(0.4,0,0.2,1),box-shadow 0.3s ease,background-color 0.4s ease;background-color:{{ theme.surface }}" style-hover="transform: translateY(-8px) rotate(0deg); box-shadow: 6px 10px 0 rgba(0, 0, 0, 0.05),             0 3px 6px rgba(0, 0, 0, 0.05);">
+          <a href="#contact-band" target="_blank" rel="noopener" onMouseEnter="{{ cozyHoverOn }}" onMouseLeave="{{ cozyHoverOff }}" style="display:block;text-decoration:none;position:relative;border:1px solid {{ theme.border }};border-radius:16px;padding:12px;transform:rotate(-0.3deg);transition:transform 0.3s cubic-bezier(0.4,0,0.2,1),box-shadow 0.3s ease,background-color 0.4s ease;background-color:{{ theme.surface }}" style-hover="transform: translateY(-8px) rotate(0deg); box-shadow: 6px 10px 0 rgba(0, 0, 0, 0.05),             0 3px 6px rgba(0, 0, 0, 0.05);">
             <div style="position:relative;overflow:hidden;border-radius:8px">
               <iframe src="tile2/index.html" loading="lazy" title="MCP Developer Tools" style="width:100%;aspect-ratio:16/9;border:0;display:block"></iframe>
             </div>
@@ -830,12 +830,12 @@
         </div>
       </sc-if>
       <section style="display:none;padding:120px {{ padH96 }} 40px;max-width:900px;margin:0 auto">
-        <h1 style="font-family: 'Perfectly Nineties',serif; font-weight: 400; font-size: 36px; line-height: 1.25; color: {{ theme.heading }}; margin: 0 0 22px; letter-spacing: 0.45px">From <span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ goKiwiSecret }}" style="cursor:pointer">Kiwi</span> roots to California sunshine <span onMouseEnter="{{ sunEnter }}" onMouseLeave="{{ sunLeave }}" style="display:inline-block;vertical-align:-4px;margin-left:4px;line-height:0;cursor:default"><svg viewBox="0 0 24 24" fill="none" style="display:block;width:32px;height:32px;transform-origin:50% 50%;animation:{{ sunAnim }}"><circle cx="12" cy="12" r="4.4" fill="#E8A70C"></circle><path d="M12 2.6v3M12 18.4v3M2.6 12h3M18.4 12h3M5.4 5.4l2.1 2.1M16.5 16.5l2.1 2.1M18.6 5.4l-2.1 2.1M7.5 16.5l-2.1 2.1" stroke="#E8A70C" stroke-width="1.6" stroke-linecap="round"></path></svg></span></h1>
-        <p style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; line-height: 1.7; color: {{ theme.body }}; margin: 0 0 8px">I moved from <span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onMouseMove="{{ wordNZMove }}" onMouseLeave="{{ wordOff }}" onClick="{{ wordNZClick }}" aria-expanded="{{ wordNZOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ wordNZColor }}; cursor: {{ wordNZCursor }}; pointer-events: {{ wordNZPE }}; background: {{ wordNZHl }}; box-shadow: 0 0 0 2px {{ wordNZHl }}; border-radius: 3px; padding: {{ wordNZPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65"><sc-for list="{{ nzLetters }}" as="l" hint-placeholder-count="11"><span style="{{ l.style }}">{{ l.ch }}</span></sc-for></span><sc-if value="{{ wordNZOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both">{{ wordNZText }}<sc-if value="{{ wordNZCaret }}" hint-placeholder-val="{{ false }}"><span style="opacity:0.7">|</span></sc-if></span></sc-if> to California to play <span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ expGolfClick }}" aria-expanded="{{ expGolfOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ expGolfColor }}; cursor: {{ expGolfCursor }}; pointer-events: {{ expGolfPE }}; background: {{ expGolfHl }}; box-shadow: 0 0 0 2px {{ expGolfHl }}; border-radius: 3px; padding: {{ expGolfPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65">Division I college golf</span><span style="display:inline-block;white-space:nowrap"><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" ref="{{ golfTeeRef }}" onClick="{{ golfShot }}" style="display:inline-block;width:{{ golfTeeW }};height:18px;border-radius:50%;background:url('./assets/golf-ball.png') center/contain no-repeat;margin:{{ golfTeeMargin }};cursor:pointer;vertical-align:-3px;flex:none;opacity:{{ golfTeeOpacity }}"></span><sc-if value="{{ golfOn }}" hint-placeholder-val="{{ false }}"><span style="display:inline-block;animation:{{ golfGapAnim }};vertical-align:baseline"></span><span ref="{{ golfHoleRef }}" style="display:inline-block;width:32px;height:11px;border-radius:50%;background:#14141a;opacity:0.82;margin:{{ golfHoleMargin }};vertical-align:baseline;animation:golfHolePop 0.35s ease-out 0.45s both"></span></sc-if></span><sc-if value="{{ expGolfOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both">, first at the University of Oregon and later at CSUN. Early morning practice and workouts left me with <span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ expHabitClick }}" aria-expanded="{{ expHabitOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ expHabitColor }}; cursor: {{ expHabitCursor }}; pointer-events: {{ expHabitPE }}; background: {{ expHabitHl }}; box-shadow: 0 0 0 2px {{ expHabitHl }}; border-radius: 3px; padding: {{ expHabitPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65">habits I still use</span><sc-if value="{{ expHabitOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both">: show up, keep at it, and fuss over the small stuff</span></sc-if>. These days, California is home with <span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onMouseMove="{{ wordHusMove }}" onMouseLeave="{{ wordOff }}" onClick="{{ wordHusClick }}" aria-expanded="{{ wordHusOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ wordHusColor }}; cursor: {{ wordHusCursor }}; pointer-events: {{ wordHusPE }}; background: {{ wordHusHl }}; box-shadow: 0 0 0 2px {{ wordHusHl }}; border-radius: 3px; padding: {{ wordHusPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65">my husband</span><sc-if value="{{ wordHusOpen }}" hint-placeholder-val="{{ false }}"><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onMouseMove="{{ wordPetsMove }}" onMouseLeave="{{ wordOff }}" onClick="{{ wordPetsClick }}" aria-expanded="{{ wordPetsOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ wordPetsColor }}; cursor: {{ wordPetsCursor }}; pointer-events: {{ wordPetsPE }}; background: {{ wordPetsHl }}; box-shadow: 0 0 0 2px {{ wordPetsHl }}; border-radius: 3px; padding: {{ wordPetsPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65">{{ wordHusText }}</span><sc-if value="{{ wordHusCaret }}" hint-placeholder-val="{{ false }}"><span style="opacity:0.7">|</span></sc-if></sc-if><sc-if value="{{ wordPetsOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both">{{ wordPetsText }}<sc-if value="{{ wordPetsCaret }}" hint-placeholder-val="{{ false }}"><span style="opacity:0.7">|</span></sc-if></span></sc-if></span></sc-if>.</p>
-        <p style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; line-height: 1.7; color: {{ theme.body }}; margin: 0 0 8px">The <span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ journeyClick }}" title="Reshuffle" style="display: inline-flex; align-items: baseline; gap: 2px; vertical-align: 2px; cursor: {{ journeyCursor }}; background: #15151c; border-radius: 8px; padding: 3px 6px 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.18); transition: transform 0.18s cubic-bezier(0.34,1.56,0.64,1); padding-bottom: 3px; padding-top: 3px" style-hover="transform:translateY(-2px)"><sc-for list="{{ journeyChars }}" as="c" hint-placeholder-count="7"><span style="{{ c.style }}">{{ c.ch }}</span></sc-for></span> into product design took <span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ expDetourClick }}" aria-expanded="{{ expDetourOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ expDetourColor }}; cursor: {{ expDetourCursor }}; pointer-events: {{ expDetourPE }}; background: {{ expDetourHl }}; box-shadow: 0 0 0 2px {{ expDetourHl }}; border-radius: 3px; padding: {{ expDetourPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65">a few detours</span>.<sc-if value="{{ expDetourOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both"> It started with physical product design, which had many of the same UX problems, just with <span onMouseEnter="{{ ballEnter }}" onMouseLeave="{{ ballLeave }}" style="cursor:default">objects<span onMouseEnter="{{ ballEnter }}" onMouseLeave="{{ ballLeave }}" style="display:inline-block;width:{{ ballSlot }};overflow:visible;vertical-align:baseline;cursor:default"><span style="display:inline-block;margin-left:6px;width:30px;height:30px;border-radius:50%;background:#F0B429;box-shadow:inset -5px -5px 0 rgba(0,0,0,0.12);opacity:{{ ballOpacity }};animation:{{ ballAnim }};transform-origin:50% 100%"></span></span></span> instead of screens. From there, I moved into graphic design before an itch to build something more functional eventually led to digital product design.<span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ toolsClick }}" title="Click to fan out" style="display:inline-flex;align-items:center;margin-left:12px;vertical-align:-11px;cursor:pointer"><span style="display:inline-block;position:relative;line-height:0;margin-left:{{ toolGap0 }};z-index:{{ tXdZ }};transition:margin-left 0.42s cubic-bezier(0.34,1.42,0.5,1)"><span style="display:block;width:40px;height:40px;border-radius:50%;background:#450035;border:2px solid #f8f8f8;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.16)"><img src="./assets/tool-xd.jpeg" alt="" style="display:block;width:100%;height:100%;object-fit:contain;transform:scale(0.88)"></span></span><span style="display:inline-block;position:relative;line-height:0;margin-left:{{ toolGap1 }};z-index:{{ tFigZ }};transition:margin-left 0.42s cubic-bezier(0.34,1.42,0.5,1)"><span style="display:block;width:40px;height:40px;border-radius:50%;background:#f8f8f8;border:2px solid #f8f8f8;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.16)"><img src="./assets/tool-figma.png" alt="" style="display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.92)"></span></span><span style="display:inline-block;position:relative;line-height:0;margin-left:{{ toolGap2 }};z-index:{{ tRepZ }};transition:margin-left 0.42s cubic-bezier(0.34,1.42,0.5,1)"><span style="display:block;width:40px;height:40px;border-radius:50%;background:#0e1525;border:2px solid #f8f8f8;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.16)"><img src="./assets/tool-replit.svg" alt="" style="display:block;width:100%;height:100%;object-fit:contain;transform:scale(0.62)"></span></span><span style="display:inline-block;position:relative;line-height:0;margin-left:{{ toolGap3 }};z-index:{{ tClaZ }};transition:margin-left 0.42s cubic-bezier(0.34,1.42,0.5,1)"><span style="display:block;width:40px;height:40px;border-radius:50%;background:#d97757;border:2px solid #f8f8f8;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.16)"><img src="./assets/tool-claude.jpeg" alt="" style="display:block;width:100%;height:100%;object-fit:cover"></span></span></span></span></sc-if></p>
-        <p style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; line-height: 1.7; color: {{ theme.body }}; margin: 0 0 8px">I joined <span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ wordNumClick }}" aria-expanded="{{ wordNumOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ wordNumColor }}; cursor: {{ wordNumCursor }}; pointer-events: {{ wordNumPE }}; background: {{ wordNumHl }}; box-shadow: 0 0 0 2px {{ wordNumHl }}; border-radius: 3px; padding: {{ wordNumPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65">Numerade</span> as its founding product designer and spent 5 years there<sc-if value="{{ wordNumOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both">{{ wordNumText }}<sc-if value="{{ wordNumCaret }}" hint-placeholder-val="{{ false }}"><span style="opacity:0.7">|</span></sc-if></span></sc-if>; now I’m at <span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ expWorkClick }}" aria-expanded="{{ expWorkOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ expWorkColor }}; cursor: {{ expWorkCursor }}; pointer-events: {{ expWorkPE }}; background: {{ expWorkHl }}; box-shadow: 0 0 0 2px {{ expWorkHl }}; border-radius: 3px; padding: {{ expWorkPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65">NEOGOV</span><sc-if value="{{ expWorkOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both"> on PowerDMS<span onMouseEnter="{{ pdmsEnter }}" onMouseLeave="{{ pdmsLeave }}" style="display:inline-block;position:relative;z-index:6;vertical-align:-8px;margin-left:8px;line-height:0"><img src="./assets/powerdms-icon.svg" alt="" style="display:block;width:40px;height:40px;border-radius:8px;box-shadow:{{ pdmsShadow }};transform:scale({{ pdmsScale }});transform-origin:50% 50%;transition:transform 0.32s cubic-bezier(0.34,1.5,0.5,1),box-shadow 0.32s ease"><span style="position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY({{ pdmsLabelY }});opacity:{{ pdmsLabelOpacity }};background:#1c1c24;color:#f4f1ea;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;letter-spacing:0.02em;padding:9px 16px;border-radius:12px;white-space:nowrap;line-height:1;pointer-events:none;box-shadow:0 4px 12px rgba(0,0,0,0.22);transition:opacity 0.25s ease,transform 0.32s cubic-bezier(0.34,1.5,0.5,1)">NEOGOV PowerDMS</span></span>, building complex software, talking directly with the people using it, and working out how to make public safety workflows feel intuitive<span style="display:inline-block;width:34px;vertical-align:-6px;overflow:visible"><svg viewBox="0 0 24 30" style="display:block;width:26px;height:32px;margin-left:7px;overflow:visible"><g style="opacity:{{ bulbRayOpacity }};transition:opacity 0.3s ease 0.12s"><g style="animation:{{ bulbRayAnim }};transform-origin:12px 11px"><g stroke="#F0B429" stroke-width="1.8" stroke-linecap="round"><path d="M12 0.8V3.4"></path><path d="M3 3.4l1.9 1.9"></path><path d="M21 3.4l-1.9 1.9"></path><path d="M0.6 12.2h2.6"></path><path d="M20.8 12.2h2.6"></path></g></g></g><path d="M12 4.2a7 7 0 0 0-4 12.8v2.2h8v-2.2a7 7 0 0 0-4-12.8z" fill="{{ bulbFill }}" stroke="{{ bulbStroke }}" stroke-width="1.5" stroke-linejoin="round" style="transition:fill 0.28s ease,stroke 0.28s ease"></path><path d="M9.4 21.4h5.2M9.9 24h4.2M10.6 26.6h2.8" stroke="{{ bulbStroke }}" stroke-width="1.5" stroke-linecap="round" fill="none" style="transition:stroke 0.28s ease"></path></svg></span></span></sc-if>.</p>
-        <p style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; line-height: 1.7; color: {{ theme.body }}; margin: 0 0 8px" ref="{{ skipTargetRef }}">Outside of work, I’m almost always <span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ expMakeClick }}" aria-expanded="{{ expMakeOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ expMakeColor }}; cursor: {{ expMakeCursor }}; pointer-events: {{ expMakePE }}; background: {{ expMakeHl }}; box-shadow: 0 0 0 2px {{ expMakeHl }}; border-radius: 3px; padding: {{ expMakePad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65">building something</span><span onMouseEnter="{{ hamEnter }}" onMouseLeave="{{ hamLeave }}" style="display:inline-block;width:41px;vertical-align:-6px;overflow:visible;cursor:default"><svg viewBox="0 0 30 26" style="display:block;width:34px;height:29px;margin-left:7px;overflow:visible"><rect x="1" y="16.5" width="9" height="8" rx="1.6" fill="#F4B23F" style="transform-origin:5.5px 24.5px;animation:{{ blk0 }}"></rect><rect x="10.5" y="16.5" width="9" height="8" rx="1.6" fill="#7FB5D5" style="transform-origin:15px 24.5px;animation:{{ blk1 }}"></rect><rect x="20" y="16.5" width="9" height="8" rx="1.6" fill="#E08B7A" style="transform-origin:24.5px 24.5px;animation:{{ blk2 }}"></rect><rect x="5.8" y="7.5" width="9" height="8" rx="1.6" fill="#8FC6A4" style="transform-origin:10.3px 15.5px;animation:{{ blk3 }}"></rect><rect x="15.3" y="7.5" width="9" height="8" rx="1.6" fill="#C9A7F5" style="transform-origin:19.8px 15.5px;animation:{{ blk4 }}"></rect><rect x="10.5" y="-1.5" width="9" height="8" rx="1.6" fill="#F4B23F" style="transform-origin:15px 6.5px;animation:{{ blk5 }}"></rect></svg></span><sc-if value="{{ expMakeOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both">. Sometimes that means designing and coding a side project, and turning a random idea into a working product just because I want to see if I can. Other times it means making an <span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onMouseMove="{{ wordBakeMove }}" onMouseLeave="{{ wordOff }}" onClick="{{ wordBakeClick }}" aria-expanded="{{ wordBakeOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ wordBakeColor }}; cursor: {{ wordBakeCursor }}; pointer-events: {{ wordBakePE }}; background: {{ wordBakeHl }}; box-shadow: 0 0 0 2px {{ wordBakeHl }}; border-radius: 3px; padding: {{ wordBakePad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65">unnecessarily elaborate layered cake</span><sc-if value="{{ wordBakeOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both">{{ wordBakeText }}<sc-if value="{{ wordBakeCaret }}" hint-placeholder-val="{{ false }}"><span style="opacity:0.7">|</span></sc-if><sc-if value="{{ wordBakeDone }}" hint-placeholder-val="{{ false }}">gaming recipe website<a onMouseEnter="{{ cozyEnter }}" onMouseLeave="{{ cozyLeave }}" href="https://www.cozyeating.app/" target="_blank" rel="noopener" aria-label="Visit Cozy Eating" style="display:inline-block;position:relative;z-index:6;vertical-align:-8px;margin-left:8px;line-height:0"><img src="./assets/cozyeating-icon.svg" alt="" style="display:block;width:40px;height:40px;border-radius:8px;box-shadow:{{ cozyShadow }};transform:scale({{ cozyScale }});transform-origin:50% 50%;transition:transform 0.32s cubic-bezier(0.34,1.5,0.5,1),box-shadow 0.32s ease"><span style="position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY({{ cozyLabelY }});opacity:{{ cozyLabelOpacity }};background:#1c1c24;color:#f4f1ea;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;letter-spacing:0.02em;padding:9px 16px;border-radius:12px;white-space:nowrap;line-height:1;pointer-events:none;box-shadow:0 4px 12px rgba(0,0,0,0.22);transition:opacity 0.25s ease,transform 0.32s cubic-bezier(0.34,1.5,0.5,1)">Cozy Eating</span></a></sc-if></span></sc-if>, building <span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onMouseMove="{{ wordFairyMove }}" onMouseLeave="{{ wordOff }}" onClick="{{ wordFairyClick }}" aria-expanded="{{ wordFairyOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ wordFairyColor }}; cursor: {{ wordFairyCursor }}; pointer-events: {{ wordFairyPE }}; background: {{ wordFairyHl }}; box-shadow: 0 0 0 2px {{ wordFairyHl }}; border-radius: 3px; padding: {{ wordFairyPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65">miniature fairy bookcases</span>, drawing charcoal images &amp; <span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onMouseMove="{{ wordDrawerMove }}" onMouseLeave="{{ wordOff }}" onClick="{{ wordDrawerClick }}" aria-expanded="{{ wordDrawerOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ wordDrawerColor }}; cursor: {{ wordDrawerCursor }}; pointer-events: {{ wordDrawerPE }}; background: {{ wordDrawerHl }}; box-shadow: 0 0 0 2px {{ wordDrawerHl }}; border-radius: 3px; padding: {{ wordDrawerPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65">drawer organizing</span><sc-if value="{{ wordDrawerOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both">{{ wordDrawerText }}<sc-if value="{{ wordDrawerCaret }}" hint-placeholder-val="{{ false }}"><span style="opacity:0.7">|</span></sc-if></span></sc-if></span></sc-if>.</p>
-        <p style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; line-height: 1.7; color: {{ theme.body }}; margin: 0 0 8px">I like projects with a little <span style="display:inline-block;white-space:nowrap"><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ termClick }}" title="Click to cycle" style="display: inline-flex; align-items: baseline; gap: 8px; cursor: pointer; background: #15151c; border-radius: 8px; padding: 2px 11px 5px; vertical-align: 3px; font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size: 17px; letter-spacing: -0.01em; color: #f4f1ea; box-shadow: 0 2px 8px rgba(0,0,0,0.18); transition: transform 0.18s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.18s ease; padding-bottom: 2px" style-hover="transform:translateY(-2px);box-shadow:0 5px 14px rgba(0,0,0,0.24)"><span style="color:#8e8ea6">&gt;/</span><span>{{ termText }}<span style="display:inline-block;width:6px;text-align:center;opacity:{{ termCaretOpacity }};color:#f4f1ea">|</span></span></span>.</span> Serious products don’t have to feel lifeless, and personal projects don’t have to exist for any reason beyond “this would be fun to make.” <span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ expPhilClick }}" aria-expanded="{{ expPhilOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ expPhilColor }}; cursor: {{ expPhilCursor }}; pointer-events: {{ expPhilPE }}; background: {{ expPhilHl }}; box-shadow: 0 0 0 2px {{ expPhilHl }}; border-radius: 3px; padding: {{ expPhilPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65">Although...</span><sc-if value="{{ expPhilOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both"> that philosophy has led to more unfinished ideas than I should admit.<span onMouseEnter="{{ noteEnter }}" onMouseLeave="{{ noteLeave }}" style="display:inline-block;position:relative;vertical-align:-11px;margin-left:9px;width:40px;height:40px;line-height:0;cursor:default"><img src="./assets/notes-icon.png" alt="" style="display:block;width:40px;height:40px;border-radius:9px;box-shadow:0 2px 6px rgba(0,0,0,0.14)"><svg viewBox="0 0 40 40" style="position:absolute;inset:0;width:40px;height:40px;overflow:visible"><g fill="none" stroke="#5b6070" stroke-width="1.5" stroke-linecap="round"><path d="M8 20.5c3-1.4 5.6.6 8.4.2 2-.3 3-1.6 5.2-1.2 1.7.3 2.4 1.4 4.6 1.2 1.8-.2 2.4-1.1 5.6-.7" stroke-dasharray="46" stroke-dashoffset="{{ noteD0 }}" style="transition:stroke-dashoffset 0.5s ease 0.05s"></path><path d="M8 27.5c2.6-1.2 4.4.8 7 .3 1.9-.4 2.6-1.5 4.6-1.1 1.5.3 1.9 1.3 3.8 1.1" stroke-dasharray="34" stroke-dashoffset="{{ noteD1 }}" style="transition:stroke-dashoffset 0.45s ease 0.4s"></path><path d="M8 33.4c2.2-.9 3.4.5 5.4.2 1.4-.2 1.6-.9 3-.7" stroke-dasharray="22" stroke-dashoffset="{{ noteD2 }}" style="transition:stroke-dashoffset 0.4s ease 0.72s"></path></g></svg></span></span></sc-if></p>
+        <h1 style="font-family: 'Perfectly Nineties',serif; font-weight: 400; font-size: 36px; line-height: 1.25; color: {{ theme.heading }}; margin: 0 0 22px; letter-spacing: 0.45px">From messy workflows to reliable systems<span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ goKiwiSecret }}" style="cursor:pointer"></span><span onMouseEnter="{{ sunEnter }}" onMouseLeave="{{ sunLeave }}" style="display:inline-block;vertical-align:-4px;margin-left:4px;line-height:0;cursor:default"><svg viewBox="0 0 24 24" fill="none" style="display:block;width:32px;height:32px;transform-origin:50% 50%;animation:{{ sunAnim }}"><circle cx="12" cy="12" r="4.4" fill="#E8A70C"></circle><path d="M12 2.6v3M12 18.4v3M2.6 12h3M18.4 12h3M5.4 5.4l2.1 2.1M16.5 16.5l2.1 2.1M18.6 5.4l-2.1 2.1M7.5 16.5l-2.1 2.1" stroke="#E8A70C" stroke-width="1.6" stroke-linecap="round"></path></svg></span></h1>
+        <p style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; line-height: 1.7; color: {{ theme.body }}; margin: 0 0 8px"><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onMouseMove="{{ wordNZMove }}" onMouseLeave="{{ wordOff }}" onClick="{{ wordNZClick }}" aria-expanded="{{ wordNZOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ wordNZColor }}; cursor: {{ wordNZCursor }}; pointer-events: {{ wordNZPE }}; background: {{ wordNZHl }}; box-shadow: 0 0 0 2px {{ wordNZHl }}; border-radius: 3px; padding: {{ wordNZPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65"><sc-for list="{{ nzLetters }}" as="l" hint-placeholder-count="11"><span style="{{ l.style }}">{{ l.ch }}</span></sc-for></span><sc-if value="{{ wordNZOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both">{{ wordNZText }}<sc-if value="{{ wordNZCaret }}" hint-placeholder-val="{{ false }}"><span style="opacity:0.7"></span></sc-if></span></sc-if><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ expGolfClick }}" aria-expanded="{{ expGolfOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ expGolfColor }}; cursor: {{ expGolfCursor }}; pointer-events: {{ expGolfPE }}; background: {{ expGolfHl }}; box-shadow: 0 0 0 2px {{ expGolfHl }}; border-radius: 3px; padding: {{ expGolfPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65"></span><span style="display:inline-block;white-space:nowrap"><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" ref="{{ golfTeeRef }}" onClick="{{ golfShot }}" style="display:inline-block;width:{{ golfTeeW }};height:18px;border-radius:50%;background:url('./assets/golf-ball.png') center/contain no-repeat;margin:{{ golfTeeMargin }};cursor:pointer;vertical-align:-3px;flex:none;opacity:{{ golfTeeOpacity }}"></span><sc-if value="{{ golfOn }}" hint-placeholder-val="{{ false }}"><span style="display:inline-block;animation:{{ golfGapAnim }};vertical-align:baseline"></span><span ref="{{ golfHoleRef }}" style="display:inline-block;width:32px;height:11px;border-radius:50%;background:#14141a;opacity:0.82;margin:{{ golfHoleMargin }};vertical-align:baseline;animation:golfHolePop 0.35s ease-out 0.45s both"></span></sc-if></span><sc-if value="{{ expGolfOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both"><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ expHabitClick }}" aria-expanded="{{ expHabitOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ expHabitColor }}; cursor: {{ expHabitCursor }}; pointer-events: {{ expHabitPE }}; background: {{ expHabitHl }}; box-shadow: 0 0 0 2px {{ expHabitHl }}; border-radius: 3px; padding: {{ expHabitPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65"></span><sc-if value="{{ expHabitOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both"></span></sc-if><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onMouseMove="{{ wordHusMove }}" onMouseLeave="{{ wordOff }}" onClick="{{ wordHusClick }}" aria-expanded="{{ wordHusOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ wordHusColor }}; cursor: {{ wordHusCursor }}; pointer-events: {{ wordHusPE }}; background: {{ wordHusHl }}; box-shadow: 0 0 0 2px {{ wordHusHl }}; border-radius: 3px; padding: {{ wordHusPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65"></span><sc-if value="{{ wordHusOpen }}" hint-placeholder-val="{{ false }}"><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onMouseMove="{{ wordPetsMove }}" onMouseLeave="{{ wordOff }}" onClick="{{ wordPetsClick }}" aria-expanded="{{ wordPetsOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ wordPetsColor }}; cursor: {{ wordPetsCursor }}; pointer-events: {{ wordPetsPE }}; background: {{ wordPetsHl }}; box-shadow: 0 0 0 2px {{ wordPetsHl }}; border-radius: 3px; padding: {{ wordPetsPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65">{{ wordHusText }}</span><sc-if value="{{ wordHusCaret }}" hint-placeholder-val="{{ false }}"><span style="opacity:0.7"></span></sc-if></sc-if><sc-if value="{{ wordPetsOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both">{{ wordPetsText }}<sc-if value="{{ wordPetsCaret }}" hint-placeholder-val="{{ false }}"><span style="opacity:0.7"></span></sc-if></span></sc-if></span></sc-if></p>
+        <p style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; line-height: 1.7; color: {{ theme.body }}; margin: 0 0 8px"><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ journeyClick }}" title="Reshuffle" style="display: inline-flex; align-items: baseline; gap: 2px; vertical-align: 2px; cursor: {{ journeyCursor }}; background: #15151c; border-radius: 8px; padding: 3px 6px 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.18); transition: transform 0.18s cubic-bezier(0.34,1.56,0.64,1); padding-bottom: 3px; padding-top: 3px" style-hover="transform:translateY(-2px)"><sc-for list="{{ journeyChars }}" as="c" hint-placeholder-count="7"><span style="{{ c.style }}">{{ c.ch }}</span></sc-for></span><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ expDetourClick }}" aria-expanded="{{ expDetourOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ expDetourColor }}; cursor: {{ expDetourCursor }}; pointer-events: {{ expDetourPE }}; background: {{ expDetourHl }}; box-shadow: 0 0 0 2px {{ expDetourHl }}; border-radius: 3px; padding: {{ expDetourPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65"></span><sc-if value="{{ expDetourOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both"><span onMouseEnter="{{ ballEnter }}" onMouseLeave="{{ ballLeave }}" style="cursor:default"><span onMouseEnter="{{ ballEnter }}" onMouseLeave="{{ ballLeave }}" style="display:inline-block;width:{{ ballSlot }};overflow:visible;vertical-align:baseline;cursor:default"><span style="display:inline-block;margin-left:6px;width:30px;height:30px;border-radius:50%;background:#F0B429;box-shadow:inset -5px -5px 0 rgba(0,0,0,0.12);opacity:{{ ballOpacity }};animation:{{ ballAnim }};transform-origin:50% 100%"></span></span></span><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ toolsClick }}" title="Click to fan out" style="display:inline-flex;align-items:center;margin-left:12px;vertical-align:-11px;cursor:pointer"><span style="display:inline-block;position:relative;line-height:0;margin-left:{{ toolGap0 }};z-index:{{ tXdZ }};transition:margin-left 0.42s cubic-bezier(0.34,1.42,0.5,1)"><span style="display:block;width:40px;height:40px;border-radius:50%;background:#450035;border:2px solid #f8f8f8;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.16)"><img src="./assets/tool-xd.jpeg" alt="" style="display:block;width:100%;height:100%;object-fit:contain;transform:scale(0.88)"></span></span><span style="display:inline-block;position:relative;line-height:0;margin-left:{{ toolGap1 }};z-index:{{ tFigZ }};transition:margin-left 0.42s cubic-bezier(0.34,1.42,0.5,1)"><span style="display:block;width:40px;height:40px;border-radius:50%;background:#f8f8f8;border:2px solid #f8f8f8;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.16)"><img src="./assets/tool-figma.png" alt="" style="display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.92)"></span></span><span style="display:inline-block;position:relative;line-height:0;margin-left:{{ toolGap2 }};z-index:{{ tRepZ }};transition:margin-left 0.42s cubic-bezier(0.34,1.42,0.5,1)"><span style="display:block;width:40px;height:40px;border-radius:50%;background:#0e1525;border:2px solid #f8f8f8;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.16)"><img src="./assets/tool-replit.svg" alt="" style="display:block;width:100%;height:100%;object-fit:contain;transform:scale(0.62)"></span></span><span style="display:inline-block;position:relative;line-height:0;margin-left:{{ toolGap3 }};z-index:{{ tClaZ }};transition:margin-left 0.42s cubic-bezier(0.34,1.42,0.5,1)"><span style="display:block;width:40px;height:40px;border-radius:50%;background:#d97757;border:2px solid #f8f8f8;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.16)"><img src="./assets/tool-claude.jpeg" alt="" style="display:block;width:100%;height:100%;object-fit:cover"></span></span></span></span></sc-if></p>
+        <p style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; line-height: 1.7; color: {{ theme.body }}; margin: 0 0 8px"><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ wordNumClick }}" aria-expanded="{{ wordNumOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ wordNumColor }}; cursor: {{ wordNumCursor }}; pointer-events: {{ wordNumPE }}; background: {{ wordNumHl }}; box-shadow: 0 0 0 2px {{ wordNumHl }}; border-radius: 3px; padding: {{ wordNumPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65"></span><sc-if value="{{ wordNumOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both">{{ wordNumText }}<sc-if value="{{ wordNumCaret }}" hint-placeholder-val="{{ false }}"><span style="opacity:0.7"></span></sc-if></span></sc-if><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ expWorkClick }}" aria-expanded="{{ expWorkOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ expWorkColor }}; cursor: {{ expWorkCursor }}; pointer-events: {{ expWorkPE }}; background: {{ expWorkHl }}; box-shadow: 0 0 0 2px {{ expWorkHl }}; border-radius: 3px; padding: {{ expWorkPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65"></span><sc-if value="{{ expWorkOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both"><span onMouseEnter="{{ pdmsEnter }}" onMouseLeave="{{ pdmsLeave }}" style="display:inline-block;position:relative;z-index:6;vertical-align:-8px;margin-left:8px;line-height:0"><img src="./assets/powerdms-icon.svg" alt="" style="display:block;width:40px;height:40px;border-radius:8px;box-shadow:{{ pdmsShadow }};transform:scale({{ pdmsScale }});transform-origin:50% 50%;transition:transform 0.32s cubic-bezier(0.34,1.5,0.5,1),box-shadow 0.32s ease"><span style="position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY({{ pdmsLabelY }});opacity:{{ pdmsLabelOpacity }};background:#1c1c24;color:#f4f1ea;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;letter-spacing:0.02em;padding:9px 16px;border-radius:12px;white-space:nowrap;line-height:1;pointer-events:none;box-shadow:0 4px 12px rgba(0,0,0,0.22);transition:opacity 0.25s ease,transform 0.32s cubic-bezier(0.34,1.5,0.5,1)"></span></span><span style="display:inline-block;width:34px;vertical-align:-6px;overflow:visible"><svg viewBox="0 0 24 30" style="display:block;width:26px;height:32px;margin-left:7px;overflow:visible"><g style="opacity:{{ bulbRayOpacity }};transition:opacity 0.3s ease 0.12s"><g style="animation:{{ bulbRayAnim }};transform-origin:12px 11px"><g stroke="#F0B429" stroke-width="1.8" stroke-linecap="round"><path d="M12 0.8V3.4"></path><path d="M3 3.4l1.9 1.9"></path><path d="M21 3.4l-1.9 1.9"></path><path d="M0.6 12.2h2.6"></path><path d="M20.8 12.2h2.6"></path></g></g></g><path d="M12 4.2a7 7 0 0 0-4 12.8v2.2h8v-2.2a7 7 0 0 0-4-12.8z" fill="{{ bulbFill }}" stroke="{{ bulbStroke }}" stroke-width="1.5" stroke-linejoin="round" style="transition:fill 0.28s ease,stroke 0.28s ease"></path><path d="M9.4 21.4h5.2M9.9 24h4.2M10.6 26.6h2.8" stroke="{{ bulbStroke }}" stroke-width="1.5" stroke-linecap="round" fill="none" style="transition:stroke 0.28s ease"></path></svg></span></span></sc-if></p>
+        <p style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; line-height: 1.7; color: {{ theme.body }}; margin: 0 0 8px" ref="{{ skipTargetRef }}"><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ expMakeClick }}" aria-expanded="{{ expMakeOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ expMakeColor }}; cursor: {{ expMakeCursor }}; pointer-events: {{ expMakePE }}; background: {{ expMakeHl }}; box-shadow: 0 0 0 2px {{ expMakeHl }}; border-radius: 3px; padding: {{ expMakePad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65"></span><span onMouseEnter="{{ hamEnter }}" onMouseLeave="{{ hamLeave }}" style="display:inline-block;width:41px;vertical-align:-6px;overflow:visible;cursor:default"><svg viewBox="0 0 30 26" style="display:block;width:34px;height:29px;margin-left:7px;overflow:visible"><rect x="1" y="16.5" width="9" height="8" rx="1.6" fill="#F4B23F" style="transform-origin:5.5px 24.5px;animation:{{ blk0 }}"></rect><rect x="10.5" y="16.5" width="9" height="8" rx="1.6" fill="#7FB5D5" style="transform-origin:15px 24.5px;animation:{{ blk1 }}"></rect><rect x="20" y="16.5" width="9" height="8" rx="1.6" fill="#E08B7A" style="transform-origin:24.5px 24.5px;animation:{{ blk2 }}"></rect><rect x="5.8" y="7.5" width="9" height="8" rx="1.6" fill="#8FC6A4" style="transform-origin:10.3px 15.5px;animation:{{ blk3 }}"></rect><rect x="15.3" y="7.5" width="9" height="8" rx="1.6" fill="#C9A7F5" style="transform-origin:19.8px 15.5px;animation:{{ blk4 }}"></rect><rect x="10.5" y="-1.5" width="9" height="8" rx="1.6" fill="#F4B23F" style="transform-origin:15px 6.5px;animation:{{ blk5 }}"></rect></svg></span><sc-if value="{{ expMakeOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both"><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onMouseMove="{{ wordBakeMove }}" onMouseLeave="{{ wordOff }}" onClick="{{ wordBakeClick }}" aria-expanded="{{ wordBakeOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ wordBakeColor }}; cursor: {{ wordBakeCursor }}; pointer-events: {{ wordBakePE }}; background: {{ wordBakeHl }}; box-shadow: 0 0 0 2px {{ wordBakeHl }}; border-radius: 3px; padding: {{ wordBakePad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65"></span><sc-if value="{{ wordBakeOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both">{{ wordBakeText }}<sc-if value="{{ wordBakeCaret }}" hint-placeholder-val="{{ false }}"><span style="opacity:0.7"></span></sc-if><sc-if value="{{ wordBakeDone }}" hint-placeholder-val="{{ false }}"><a onMouseEnter="{{ cozyEnter }}" onMouseLeave="{{ cozyLeave }}" href="#contact-band" target="_blank" rel="noopener" aria-label="Contact Daud Ibrahim Hassan" style="display:inline-block;position:relative;z-index:6;vertical-align:-8px;margin-left:8px;line-height:0"><img src="./assets/cozyeating-icon.svg" alt="" style="display:block;width:40px;height:40px;border-radius:8px;box-shadow:{{ cozyShadow }};transform:scale({{ cozyScale }});transform-origin:50% 50%;transition:transform 0.32s cubic-bezier(0.34,1.5,0.5,1),box-shadow 0.32s ease"><span style="position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY({{ cozyLabelY }});opacity:{{ cozyLabelOpacity }};background:#1c1c24;color:#f4f1ea;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;letter-spacing:0.02em;padding:9px 16px;border-radius:12px;white-space:nowrap;line-height:1;pointer-events:none;box-shadow:0 4px 12px rgba(0,0,0,0.22);transition:opacity 0.25s ease,transform 0.32s cubic-bezier(0.34,1.5,0.5,1)"></span></a></sc-if></span></sc-if><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onMouseMove="{{ wordFairyMove }}" onMouseLeave="{{ wordOff }}" onClick="{{ wordFairyClick }}" aria-expanded="{{ wordFairyOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ wordFairyColor }}; cursor: {{ wordFairyCursor }}; pointer-events: {{ wordFairyPE }}; background: {{ wordFairyHl }}; box-shadow: 0 0 0 2px {{ wordFairyHl }}; border-radius: 3px; padding: {{ wordFairyPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65"></span><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onMouseMove="{{ wordDrawerMove }}" onMouseLeave="{{ wordOff }}" onClick="{{ wordDrawerClick }}" aria-expanded="{{ wordDrawerOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ wordDrawerColor }}; cursor: {{ wordDrawerCursor }}; pointer-events: {{ wordDrawerPE }}; background: {{ wordDrawerHl }}; box-shadow: 0 0 0 2px {{ wordDrawerHl }}; border-radius: 3px; padding: {{ wordDrawerPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65"></span><sc-if value="{{ wordDrawerOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both">{{ wordDrawerText }}<sc-if value="{{ wordDrawerCaret }}" hint-placeholder-val="{{ false }}"><span style="opacity:0.7"></span></sc-if></span></sc-if></span></sc-if></p>
+        <p style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; line-height: 1.7; color: {{ theme.body }}; margin: 0 0 8px"><span style="display:inline-block;white-space:nowrap"><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ termClick }}" title="Click to cycle" style="display: inline-flex; align-items: baseline; gap: 8px; cursor: pointer; background: #15151c; border-radius: 8px; padding: 2px 11px 5px; vertical-align: 3px; font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size: 17px; letter-spacing: -0.01em; color: #f4f1ea; box-shadow: 0 2px 8px rgba(0,0,0,0.18); transition: transform 0.18s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.18s ease; padding-bottom: 2px" style-hover="transform:translateY(-2px);box-shadow:0 5px 14px rgba(0,0,0,0.24)"><span style="color:#8e8ea6"></span><span>{{ termText }}<span style="display:inline-block;width:6px;text-align:center;opacity:{{ termCaretOpacity }};color:#f4f1ea"></span></span></span></span><span role="button" tabindex="0" onKeyDown="{{ spanKey }}" onClick="{{ expPhilClick }}" aria-expanded="{{ expPhilOpen }}" style="font-family: 'Figtree',sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 0; color: {{ expPhilColor }}; cursor: {{ expPhilCursor }}; pointer-events: {{ expPhilPE }}; background: {{ expPhilHl }}; box-shadow: 0 0 0 2px {{ expPhilHl }}; border-radius: 3px; padding: {{ expPhilPad }}; transition: opacity 0.2s ease" style-hover="opacity:0.65"></span><sc-if value="{{ expPhilOpen }}" hint-placeholder-val="{{ false }}"><span style="animation:aboutReveal 0.45s ease both"><span onMouseEnter="{{ noteEnter }}" onMouseLeave="{{ noteLeave }}" style="display:inline-block;position:relative;vertical-align:-11px;margin-left:9px;width:40px;height:40px;line-height:0;cursor:default"><img src="./assets/notes-icon.png" alt="" style="display:block;width:40px;height:40px;border-radius:9px;box-shadow:0 2px 6px rgba(0,0,0,0.14)"><svg viewBox="0 0 40 40" style="position:absolute;inset:0;width:40px;height:40px;overflow:visible"><g fill="none" stroke="#5b6070" stroke-width="1.5" stroke-linecap="round"><path d="M8 20.5c3-1.4 5.6.6 8.4.2 2-.3 3-1.6 5.2-1.2 1.7.3 2.4 1.4 4.6 1.2 1.8-.2 2.4-1.1 5.6-.7" stroke-dasharray="46" stroke-dashoffset="{{ noteD0 }}" style="transition:stroke-dashoffset 0.5s ease 0.05s"></path><path d="M8 27.5c2.6-1.2 4.4.8 7 .3 1.9-.4 2.6-1.5 4.6-1.1 1.5.3 1.9 1.3 3.8 1.1" stroke-dasharray="34" stroke-dashoffset="{{ noteD1 }}" style="transition:stroke-dashoffset 0.45s ease 0.4s"></path><path d="M8 33.4c2.2-.9 3.4.5 5.4.2 1.4-.2 1.6-.9 3-.7" stroke-dasharray="22" stroke-dashoffset="{{ noteD2 }}" style="transition:stroke-dashoffset 0.4s ease 0.72s"></path></g></svg></span></span></sc-if></p>
       </section>
 
       <section style="padding:120px {{ padH96 }} 40px;max-width:900px;margin:0 auto">
@@ -1694,86 +1694,86 @@ class Component extends DCLogic {
         impact: 'whyLayer combines five LLM providers, web evidence and adaptive questioning to produce a more inspectable decision instead of a single unsupported model response.',
         overview: 'A decision-intelligence system for evidence-backed GO/NO-GO recommendations.',
         owned: [
-          'Led end-to-end design for Study Groups, translating high level business and learning goals into a scalable student collaboration experience.',
-          'Owned research synthesis, experience strategy, feature prioritization, and interaction design.',
-          'Partnered closely with PM and engineering to balance learning outcomes, safety, and speed to market constraints.'
+          '',
+          '',
+          ''
         ],
         objectives: [
-          { goal: 'Foster collaboration among students', question: 'How might we help students ask for help and learn together without creating chaos, spam, or off topic noise?' },
-          { goal: 'Increase active user engagement', question: 'How might we move students from passive consumption (watching answer videos) to active participation (asking, responding, sharing)?' },
-          { goal: 'Encourage content sharing', question: 'How might we enable sharing valuable academic materials while maintaining quality, trust, and moderation at scale?' }
+          { goal: '', question: '' },
+          { goal: '', question: '' },
+          { goal: '', question: '' }
         ],
         solution: [
-          { title: 'Chat Rooms', copy: 'Real time chat directly supports peer-to-peer learning and increases engagement.', tradeoffs: ['Accepted higher moderation complexity in exchange for faster interaction', 'Chose chat over threaded forums to encourage immediacy'], thinking: 'Optimized for momentum, not perfection. Learning happens fastest when friction is low.' },
-          { title: 'Content Discovery & Sharing 🔍', copy: "Shared notes, lectures, and exams extend Numerade's learning ecosystem beyond video answers.", tradeoffs: ['Structured sharing to prevent low-quality content dumps', 'Accepted slower content growth in exchange for trust and clarity'], thinking: 'Optimized for quality signals, not raw volume.' },
-          { title: 'Collaboration Tools 🛠️', copy: 'Students need ways to react, respond, and share without derailing conversations.', tradeoffs: ['Shipped a limited toolset initially instead of a full Slack style feature set', 'Focused on the most expressive, high signal interactions first'], thinking: 'Prioritized behavior shaping over feature completeness.' },
-          { title: 'Personalization & Group Admin', copy: 'Different study groups have different norms, subjects, and engagement levels.', tradeoffs: ['Gave admins control instead of enforcing rigid global rules', 'Increased complexity for group creators to improve long-term health'], thinking: 'Designed for scalability through ownership, not centralized control.' },
-          { title: 'Moderation & Safety 🛡️', copy: 'Open collaboration only works if students feel safe and content remains relevant.', tradeoffs: ['Balanced automation with human moderation tools', 'Avoided over policing early to prevent chilling participation'], thinking: 'Designed guardrails that protect users without discouraging contribution.' }
+          { title: '', copy: '', tradeoffs: ['', ''], thinking: '' },
+          { title: '', copy: "", tradeoffs: ['', ''], thinking: '' },
+          { title: '', copy: '', tradeoffs: ['', ''], thinking: '' },
+          { title: '', copy: '', tradeoffs: ['', ''], thinking: '' },
+          { title: '', copy: '', tradeoffs: ['', ''], thinking: '' }
         ],
         kpis: [
-          { label: 'Engagement', why: "Study Groups aimed to shift students from passive consumption to active learning. Without participation, the feature wouldn't succeed.", what: ['Daily participation in collaborative actions (messages, replies, uploads)', 'Average time spent in Study Groups'], reason: 'These metrics would validate whether the design lowered the barrier to contribution and encouraged active behaviors, serving as early indicators of value before long term retention data.' },
-          { label: 'Retention', why: 'Study Groups needed to increase platform stickiness beyond just homework help.', what: ['Return rate of users who joined a Study Group', 'Frequency of repeat participation'], reason: 'Retention would show whether collaborative learning became part of users\u2019 regular study routines rather than a novelty.' },
-          { label: 'Adoption', why: "Broad adoption was required for Study Groups to meaningfully impact Numerade's ecosystem.", what: ['Percentage of active users engaging with Study Groups', 'Feature discovery and first time interaction rates'], reason: 'Adoption would confirm the experience was intuitive, discoverable, and valuable beyond a small power user group.' }
+          { label: '', why: "", what: ['', ''], reason: '' },
+          { label: '', why: '', what: ['', ''], reason: '' },
+          { label: '', why: "", what: ['', ''], reason: '' }
         ],
         researchInputs: [
-          'Qualitative insights from student interviews and usability testing',
-          'Behavioral data showing dropoffs after content consumption',
-          'Existing Numerade usage patterns (solo study, transactional Q&A)',
-          'Competitive patterns from Discord, Slack, Reddit study communities'
+          '',
+          '',
+          '',
+          ''
         ],
         insightMap: [
-          { insight: 'Students want help now, not later', implication: 'Prioritize real time chat over async forums' },
-          { insight: 'Large, open groups quickly become noisy', implication: 'Start with smaller, topic based groups' },
-          { insight: 'Fear of asking \u201cdumb\u201d questions is real', implication: 'Design low friction, informal chat experiences' },
-          { insight: 'Trust matters when sharing notes/exams', implication: 'Strong moderation & clear group ownership needed' }
+          { insight: '', implication: '' },
+          { insight: '', implication: '' },
+          { insight: '', implication: '' },
+          { insight: '', implication: '' }
         ],
         constraints: [
-          { label: 'Engineering Bandwidth', response: 'Scoped MVP features to validate behavior before expanding' },
-          { label: 'Moderation Scalability', response: 'Reused existing design system components to move faster' },
-          { label: 'Existing Numerade Architecture', response: 'Designed extensible interaction patterns that could evolve' },
-          { label: 'Risk of launching an unproven feature', response: 'Prioritized features that changed behavior, not just UI' }
+          { label: '', response: '' },
+          { label: '', response: '' },
+          { label: '', response: '' },
+          { label: '', response: '' }
         ],
         componentLibrary: {
-          intro: "Study Groups required a scalable component system to support real-time collaboration. I designed reusable components for chat, reactions, threads, uploads, content previews, moderation, and system states, all built to integrate seamlessly with Numerade's existing design system.\n\nRather than designing one-off screens, I focused on composable components that could scale across different group types, reduce future design and engineering overhead, and enable faster iteration without sacrificing consistency.",
-          tradeoffs: 'To ship quickly and responsibly, I prioritized a focused set of interactions over feature completeness, accepted higher moderation complexity to enable real-time engagement, and optimized for extensibility rather than visual novelty. These decisions allowed us to validate core collaboration behaviors early while leaving room to evolve the system based on real usage.'
+          intro: "",
+          tradeoffs: ''
         },
         solutionBreakdown: [
-          { section: 'Explore Study Groups', rawImages: ['./assets/sg-explore.webp'], items: [
-            { title: 'Search Bar', copy: 'Users can search for any study group by entering keywords related to subjects, topics, or group names.' },
-            { title: 'Group Previews', copy: 'Each result includes key details such as the group name, description and number of active members.' },
-            { title: 'Join & Request Access', copy: 'Daily participation in collaborative actions (messages, replies, uploads) and average time spent in Study Groups.' }
+          { section: '', rawImages: ['./assets/sg-explore.webp'], items: [
+            { title: '', copy: '' },
+            { title: '', copy: '' },
+            { title: '', copy: '' }
           ] },
-          { section: 'My Groups', rawImages: ['./assets/sg-mygroups.webp'], items: [
-            { title: 'Joined Groups', copy: 'Displays all the groups a student has actively joined, sorted by recent activity to highlight ongoing discussions.' },
-            { title: 'Recommended Groups', copy: "Curated suggestions based on the student's academic interests, past participation, and trending topics within Numerade's platform." }
+          { section: '', rawImages: ['./assets/sg-mygroups.webp'], items: [
+            { title: '', copy: '' },
+            { title: '', copy: "" }
           ] },
-          { section: 'Messages', rawImages: ['./assets/sg-messages.webp'], items: [
-            { title: 'Message Types', copy: 'Users can send text messages, images, links, and file attachments to share valuable resources and information efficiently.' },
-            { title: 'Reactions', copy: 'Users can react to a message with an emoji.' },
-            { title: 'Reporting', copy: 'Users can report inappropriate content or flag/spam for moderator review.' }
+          { section: '', rawImages: ['./assets/sg-messages.webp'], items: [
+            { title: '', copy: '' },
+            { title: '', copy: '' },
+            { title: '', copy: '' }
           ] },
-          { section: 'Threaded Conversations', rawImages: ['./assets/sg-threads.webp'], items: [
-            { title: 'Threaded Replies', copy: 'To keep discussions organized, threaded replies allow students to respond directly to specific messages, ensuring key points are easily traceable.' }
+          { section: '', rawImages: ['./assets/sg-threads.webp'], items: [
+            { title: '', copy: '' }
           ] },
-          { section: 'Pinned Messages', rawImages: ['./assets/sg-pinned.webp'], items: [
-            { title: 'Pinning', copy: 'Important messages, such as exam tips, group schedules, or key files, can be pinned for easy reference.' }
+          { section: '', rawImages: ['./assets/sg-pinned.webp'], items: [
+            { title: '', copy: '' }
           ] },
-          { section: 'Creating a Study Group', rawImages: ['./assets/sg-create.webp'], items: [
-            { title: 'Start New Group', copy: 'Users can initiate group creation from the "My Groups" section or directly from the Study Groups homepage.' },
-            { title: 'Invite Members', copy: "Users can invite peers by sharing a direct invite link or selecting from their network within Numerade." }
+          { section: '', rawImages: ['./assets/sg-create.webp'], items: [
+            { title: '', copy: '' },
+            { title: '', copy: "" }
           ] }
         ],
         moreTime: [
-          { title: 'Ace Integration', copy: 'Embed Ace into Study Groups to summarize discussions, suggest next steps, and surface relevant content at key moments of confusion.' },
-          { title: 'Shared Content Repository', copy: 'Evolve uploads into a searchable group library so high quality notes and resources persist beyond real time chat.' },
-          { title: 'Polls, Surveys & Gamification', copy: 'Introduce low friction ways to prioritize topics, encourage participation, and reinforce helpful behaviors without incentivizing noise.' }
+          { title: '', copy: '' },
+          { title: '', copy: '' },
+          { title: '', copy: '' }
         ],
         outcomes: [
-          { label: 'Engagement', impact: 'These metrics validated that interaction-first design successfully reduced friction to contribution and encouraged sustained participation.', items: ['Average session time increased by 27%', 'Daily collaborative actions increased by 61%', 'The share of users who took at least one collaborative action grew from 22% to 40%', 'Reactions and threaded replies accounted for 40% of first time interactions, lowering the barrier to participation'] },
-          { label: 'Retention', impact: "Retention data showed collaborative learning became part of students’ regular study routines rather than a novelty feature.", items: ['58% of users who engaged once returned to participate again', 'Study Group participants showed a 20% higher 7 day return rate compared to non-participants', 'Engaged users averaged 1.8 Study Group sessions per week, indicating emerging habitual behavior'] },
-          { label: 'Adoption', impact: 'Adoption metrics confirmed the experience was intuitive, discoverable, and valuable beyond a small power user group.', items: ['Discovery to first interaction conversion reached 38%, supported by visible peer activity and low friction entry points', '31% of weekly active users engaged with Study Groups within the first release window', 'First time users were 1.6 times more likely to participate when groups showed recent activity'] }
+          { label: '', impact: '', items: ['', '', '', ''] },
+          { label: '', impact: "", items: ['', '', ''] },
+          { label: '', impact: '', items: ['', '', ''] }
         ],
-        reflection: 'This project reinforced how I approach product design, to start with behavior, not features. By designing interaction first systems within real constraints, I helped shift Study Groups from passive content consumption to active collaboration, driving meaningful engagement and repeat use for Numerade.'
+        reflection: ''
       },
       'study-party': {
         title: 'CiteXai', subtitle: 'Research and verification tool', tags: ['AI Evaluation', 'Citation Verification', 'Research'], coverImg: './assets/citexai-home.png',
@@ -1781,80 +1781,80 @@ class Component extends DCLogic {
         impact: 'CiteXai checks claims against Crossref, OpenAlex, Google Books and arXiv before returning an evidence-backed result.',
         overview: 'An AI citation-verification platform for checking evidence behind generated claims.',
         owned: [
-          'Defined the product experience and interaction strategy for real-time study sessions.',
-          "Designed a distinct visual identity and component system, separate from Numerade's core UI.",
-          'Scoped the MVP with PM and engineering, then iterated rapidly on live behavioral data.'
+          '',
+          "",
+          ''
         ],
         objectives: [
-          { goal: 'Increase participation', question: 'How might we help students study together without social pressure?' },
-          { goal: 'Reduce entry friction', question: 'How might we make joining a session as easy as clicking play?' },
-          { goal: 'Encourage longer sessions', question: 'How might we motivate students to stay focused and engaged?' }
+          { goal: '', question: '' },
+          { goal: '', question: '' },
+          { goal: '', question: '' }
         ],
         solution: [
-          { title: 'Reducing Friction to Join', copy: 'Interest was high, but many students dropped off before entering a room.', listLabel: 'Design Decisions', tradeoffs: ['Instant join rooms', 'Auto generated topics', 'Visible participant count', 'Clear active status indicators'], paragraphLabel: 'Tradeoff', thinking: 'We sacrificed deeper customization early on to prioritize speed to entry.' },
-          { title: 'Lowering Social Anxiety', copy: 'Students wanted accountability without feeling forced to interact.', listLabel: 'Design Decisions', tradeoffs: ['Quiet mode rooms', 'Optional video and audio', 'Lightweight emoji reactions', 'Behavioral cues in UI copy'], paragraphLabel: 'Tradeoff', thinking: 'We limited expressive social features like DMs or detailed profiles to reduce complexity and moderation overhead.' },
-          { title: 'Increasing Engagement Time', copy: "Joining a room wasn't enough, students needed reasons to stay.", listLabel: 'Design Decisions', tradeoffs: ['Study timers', 'Visible streaks', 'Micro interactions like reactions and prompts'], paragraphLabel: 'Tradeoff', thinking: 'We intentionally avoided heavy gamification until core behaviors were validated.' }
+          { title: '', copy: '', listLabel: '', tradeoffs: ['', '', '', ''], paragraphLabel: '', thinking: '' },
+          { title: '', copy: '', listLabel: '', tradeoffs: ['', '', '', ''], paragraphLabel: '', thinking: '' },
+          { title: '', copy: "", listLabel: '', tradeoffs: ['', '', ''], paragraphLabel: '', thinking: '' }
         ],
         solutionBreakdown: [
-          { section: 'Main Screens', rawImages: ['./assets/sp-mainscreens.webp'], items: [
-            { title: 'Home', copy: 'Students can instantly join active study parties or sessions created by friends. The focus is speed and momentum and minimizing the steps between intent and participation.' },
-            { title: 'Browse', copy: 'Students can explore study parties by subject or activity. While Home prioritizes speed, Browse supports discovery.' }
+          { section: '', rawImages: ['./assets/sp-mainscreens.webp'], items: [
+            { title: '', copy: '' },
+            { title: '', copy: '' }
           ] },
-          { section: 'Joining a party', imageCount: 2, rawImages: ['./assets/sp-joining-1.webp', './assets/sp-joining-2.webp'], items: [
-            { title: 'Before Joining', copy: "Students see the topic, participants, format, and time in the current study block, so they know what they're walking into. Multiple choice quiz mode creates an engaging, low-pressure way to test knowledge as a group." },
-            { title: 'Inside the party', copy: 'The experience prioritizes presence without pressure. Students interact through avatars, chat, reactions and quiz participation. Shared topics keep everyone aligned while maintaining flexibility in how they participate.' }
+          { section: '', imageCount: 2, rawImages: ['./assets/sp-joining-1.webp', './assets/sp-joining-2.webp'], items: [
+            { title: '', copy: "" },
+            { title: '', copy: '' }
           ] },
-          { section: 'Creating a party', rawImages: ['./assets/sp-creating.webp'], items: [
-            { title: 'Solo Party', copy: 'A personal accountability session using timers and streaks.' },
-            { title: 'Group Party', copy: 'A collaborative session where friends or classmates can join.' }
+          { section: '', rawImages: ['./assets/sp-creating.webp'], items: [
+            { title: '', copy: '' },
+            { title: '', copy: '' }
           ] },
-          { section: 'Leaderboards', rawImages: ['./assets/sp-leaderboards.webp'], items: [
-            { title: 'Rankings', copy: 'Leaderboards introduced friendly competition across three levels. There is global rankings, school rankings and a inter-school competition. These mechanics reinforced motivation while maintaining an academic focus.' }
+          { section: '', rawImages: ['./assets/sp-leaderboards.webp'], items: [
+            { title: '', copy: '' }
           ] }
         ],
         outcomes: [
-          { label: 'Engagement', items: ['+35% of students joining a study party weekly after Quick Join shipped', 'Group sessions drove 2× more repeat participation than solo sessions'] },
-          { label: 'Motivation', items: ['45% higher streak retention among leaderboard participants', '3 of 4 students said competition made studying more enjoyable'] },
-          { label: 'Retention', items: ['60% of users who added school details returned within 3 days'] }
+          { label: '', items: ['', ''] },
+          { label: '', items: ['', ''] },
+          { label: '', items: [''] }
         ],
         observations: {
           left: [
-            { heading: 'Many existing platforms leaned heavily toward:', items: ['feature depth', 'public visibility', 'structured participation'] },
-            { heading: 'Live Sessions often felt', items: ['performative', 'scheduled', 'socially demanding'] },
-            { text: 'Students frequently had to navigate complexity before they could actually start studying.' }
+            { heading: '', items: ['', '', ''] },
+            { heading: '', items: ['', '', ''] },
+            { text: '' }
           ],
           right: [
-            { text: 'Rather than replicate community platforms, I focused on designing a low friction study environment.' },
-            { heading: 'Key priorities included', items: ['instant access', 'visible activity', 'lightweight interaction'] },
-            { text: 'The goal was not to build a social network, but to make studying together feel effortless.' }
+            { text: '' },
+            { heading: '', items: ['', '', ''] },
+            { text: '' }
           ]
         },
         researchInputs: [
-          'Drop off patterns during AI sessions',
-          'Social feature engagement data',
-          'Time of day study trends',
-          'Exit surveys',
-          '1:1 student interviews'
+          '',
+          '',
+          '',
+          '',
+          ''
         ],
         insightMap: [
-          { insight: 'Students want community, but fear awkwardness.', implication: 'Low Pressure participation and passive presence options' },
-          { insight: "Students didn't want rigid commitments.", implication: 'Instant drop-in access' },
-          { insight: 'Empty rooms felt discouraging.', implication: 'Visible activity and momentum' },
-          { insight: 'Many students wanted quiet accountability.', implication: 'Reduced friction at entry' }
+          { insight: '', implication: '' },
+          { insight: "", implication: '' },
+          { insight: '', implication: '' },
+          { insight: '', implication: '' }
         ],
         constraints: [
-          { label: 'Small Design team', response: 'We needed to move quickly and validate the concept early.' },
-          { label: 'Limited engineering bandwidth', response: "The solution needed to work within Numerade's existing infrastructure." },
-          { label: 'Unproven feature category', response: 'Social learning was new for the platform, so the MVP had to demonstrate value quickly.' },
-          { label: 'Risk of building a Discord clone', response: 'We needed to avoid creating a complex community platform that would slow development and moderation.' }
+          { label: '', response: '' },
+          { label: '', response: "" },
+          { label: '', response: '' },
+          { label: '', response: '' }
         ],
-        reflection: 'Study Party reflects how I approach product design, by starting with behavioral insights rather than features.',
-        reflectionExtra: ['Instead of building a complex social platform, I focused on reducing psychological friction and designing interactions that support real study habits.'],
-        reflectionStrengths: ['Behavior driven product design', 'Simplifying complex interaction spaces', 'Balancing social engagement with user comfort', 'Designing lightweight systems that scale'],
+        reflection: '',
+        reflectionExtra: [''],
+        reflectionStrengths: ['', '', '', ''],
         moreTime: [
-          { title: 'Subject-Based Matchmaking', copy: 'Auto-pair students studying the same topic into a room instead of relying on manual discovery.' },
-          { title: 'Cross-Platform Rooms', copy: 'Extend live rooms into Ace AI Tutor sessions so students can bring a tutor into a group study block.' },
-          { title: 'Deeper Progress Insights', copy: 'Give students a weekly summary of study time, streaks, and topics covered across their parties.' }
+          { title: '', copy: '' },
+          { title: '', copy: '' },
+          { title: '', copy: '' }
         ]
       },
       bungalow: {
@@ -1866,67 +1866,67 @@ class Component extends DCLogic {
         role: 'Built and published a CLI that generates token-efficient repository maps, dependency graphs and code signatures across multiple languages.',
         impact: 'skeletree gives AI coding agents a compact view of a codebase and includes MCP integration, incremental caching and GitHub Actions CI.',
         overview: 'A repository context-map tool for AI coding agents.',
-        problemIntro: 'When I joined Numerade, the product UI was inconsistent across surfaces. Components were duplicated, styles drifted, and engineers were recreating patterns from scratch. As we expanded to new features, the design debt compounded:',
+        problemIntro: '',
         problemPoints: [
-          'Inconsistent typography and spacing',
-          'Multiple button styles across flows',
-          'Lack of a brand identity',
-          'No shared token system',
-          'Slow design-to-dev handoff',
-          'Increased QA cycles due to UI inconsistencies'
+          '',
+          '',
+          '',
+          '',
+          '',
+          ''
         ],
-        opportunity: "Build Bungalow, Numerade's first centralized web design system, a scalable foundation for product consistency and speed.",
+        opportunity: "",
         scopeReach: [
-          { label: 'Launch Size', value: 'Rolled out to 54 internal team members (4 product designers, 30+ engineers, PMs, Marketing, Growth & QA)' },
-          { label: 'Product surfaces served', value: 'Student learning flows, Ace AI Tutor, Study Groups, Flashcards, Educator Dashboards, Onboarding & Paywalls' },
-          { label: 'Teams Impacted', value: 'Product, Engineering, Growth & Marketing' }
+          { label: '', value: '' },
+          { label: '', value: '' },
+          { label: '', value: '' }
         ],
         owned: [
-          'Designed and documented 60+ core components and 200+ variations, a color system, and a responsive type scale.',
-          'Ran weekly syncs with engineering, defined naming conventions, and mapped tokens to CSS variables.',
-          'Presented efficiency projections and a long-term scalability roadmap to secure leadership buy-in.'
+          '',
+          '',
+          ''
         ],
         colorSystem: [
-          { label: 'Core Colors', items: [
-            { title: 'Primary Brand Color', colors: ['#1749AD'], desc: 'Implemented with graded swatches to support hover, active, disabled, and background states.' },
-            { title: 'Secondary Core Color', colors: ['#A9D3F5'], desc: 'Used for lighter UI treatments, background accents, and layered depth.' },
-            { title: 'Neutral Foundation', colors: ['#E4E6EA', '#8892A0', '#4A5568', '#2D3748'], desc: 'Scaled grays, white, and black, structured for typography hierarchy, backgrounds, dividers, and elevation layering.' }
+          { label: '', items: [
+            { title: '', colors: ['#1749AD'], desc: '' },
+            { title: '', colors: ['#A9D3F5'], desc: '' },
+            { title: '', colors: ['#E4E6EA', '#8892A0', '#4A5568', '#2D3748'], desc: '' }
           ] },
-          { label: 'Decorative Colors', items: [
-            { title: 'Tangerine (Decorative)', colors: ['#F0703C'] },
-            { title: 'Saffron (Decorative)', colors: ['#F0B429'] },
-            { title: 'Phlox (Decorative)', colors: ['#C33FE0'] },
-            { title: 'Emerald (Decorative)', colors: ['#22C55E'] }
-          ], text: 'The decorative palette adds expressive range across both marketing and feature level branding within the product. Each includes graded swatches for flexible use across backgrounds, tags, highlights, and feature differentiation.' },          { label: 'System Colors', items: [
-            { title: 'Success States', colors: ['#22C55E'] },
-            { title: 'Error States', colors: ['#DC2626'] },
-            { title: 'Warning States', colors: ['#F0B429'] },
-            { title: 'Informational Feedback', colors: ['#4C5FD5'] }
-          ], text: 'System colors are reserved exclusively for product state communication and should not be used in marketing or decorative contexts. These colors prioritize contrast, immediacy, and semantic recognition to support user comprehension and accessibility.' }
+          { label: '', items: [
+            { title: '', colors: ['#F0703C'] },
+            { title: '', colors: ['#F0B429'] },
+            { title: '', colors: ['#C33FE0'] },
+            { title: '', colors: ['#22C55E'] }
+          ], text: '' },          { label: '', items: [
+            { title: '', colors: ['#22C55E'] },
+            { title: '', colors: ['#DC2626'] },
+            { title: '', colors: ['#F0B429'] },
+            { title: '', colors: ['#4C5FD5'] }
+          ], text: '' }
         ],
         impactHighlights: {
-          workflow: ['Reduced design iteration cycles by 30%', 'Reduced time to create new screens by 40%', 'Decreased QA UI bugs by 30%'],
-          designers: ['Build new flows using existing components', 'Focus on solving problems instead of redo UI', 'Prototype significantly faster'],
-          engineering: ['Reduced dev handoff by 35%', 'Decreased component build time significantly', 'Cut duplicate UI implementation across teams (Engineers were no longer rebuilding patterns from scratch)'],
-          business: ['Faster launch cycles for new features (Study Groups, AI features, Educator Dashboard)', 'Increased UI & Brand consistency, which increased design trust', 'Created foundation for scale as MAU grew']
+          workflow: ['', '', ''],
+          designers: ['', '', ''],
+          engineering: ['', '', ''],
+          business: ['', '', '']
         },
         objectives: [
-          { goal: 'End duplicated UI', question: 'How might we stop teams rebuilding the same patterns from scratch?' },
-          { goal: 'Speed up handoff', question: 'How might design and engineering share one source of truth?' },
-          { goal: 'Scale without chaos', question: 'How might the system support new product surfaces without drifting?' }
+          { goal: '', question: '' },
+          { goal: '', question: '' },
+          { goal: '', question: '' }
         ],
         solution: [
-          { title: 'Token-based color system', copy: 'Graded primary, secondary, neutral, decorative, and system-state palettes, each with hover, active, and disabled swatches.' },
-          { title: '60+ core components', copy: 'Buttons, fields, drawers, modals, cards, navigation, tags, and AI response containers, all built on an 8pt grid.' },
-          { title: 'Cross-functional rollout', copy: 'Phased adoption across Student learning, Ace AI Tutor, Study Groups, Educator Dashboards, Onboarding, and Paywalls.' }
+          { title: '', copy: '' },
+          { title: '', copy: '' },
+          { title: '', copy: '' }
         ],
         outcomes: [
-          { label: 'Workflow', items: ['Design iteration cycles down 30%', 'Time to build new screens down 40%', 'QA UI bugs down 30%'] },
-          { label: 'Engineering', items: ['Dev handoff time down 35%', 'Duplicate UI implementation across teams eliminated'] },
-          { label: 'Business', items: ['Faster launch cycles for Study Groups, AI features, and Educator Dashboard', 'A foundation for scale as MAU grew'] }
+          { label: '', items: ['', '', ''] },
+          { label: '', items: ['', ''] },
+          { label: '', items: ['', ''] }
         ],
-        reflection: 'No one handed me a brief that said "build a design system." I just couldn\u2019t ignore the inconsistency anymore. As we scaled, things were starting to feel messy with the duplicated components, slightly different button styles and engineers always rebuilding patterns from scratch. So I decided to fix it.',
-        reflectionExtra: ['In a fast moving environment with no extra resources, I took the initiative to create the structure we were missing. What started as a side effort became foundational infrastructure that made our work faster, more consistent, and way more scalable.'],
+        reflection: '',
+        reflectionExtra: [''],
       },
       loop: {
         title: 'Ayah AI', subtitle: 'Personal project', tags: ['Speech Recognition', 'ONNX', 'React'], coverImg: './assets/ayah-home.png',
@@ -1934,87 +1934,87 @@ class Component extends DCLogic {
         impact: 'Ayah AI runs speech recognition entirely on the device, so the user’s audio does not need to leave the device.',
         overview: 'An offline Quran recitation identification app using on-device speech recognition.',
         owned: [
-          'Experience strategy and product framing',
-          'User role modeling and permissions architecture',
-          'Interaction design for scheduling and task flows',
-          'Rapid prototyping and high-fidelity UI design',
-          'Concept validation through competitive research'
+          '',
+          '',
+          '',
+          '',
+          ''
         ],
         objectives: [
-          { goal: 'Empower kids to participate responsibly', question: 'How might we allow kids to contribute to family planning while maintaining parental oversight?' },
-          { goal: 'Reduce coordination friction for parents', question: 'How might we reduce the constant back-and-forth that often happens when scheduling family activities?' },
-          { goal: 'Support extended household members', question: 'How might we include relatives, babysitters, or caregivers without overwhelming them with control or complexity?' },
-          { goal: 'Establish a shared source of truth', question: 'How might we ensure the household calendar remains reliable, clear, and conflict free?' }
+          { goal: '', question: '' },
+          { goal: '', question: '' },
+          { goal: '', question: '' },
+          { goal: '', question: '' }
         ],
         researchInputs: [
-          'Competitive audit of Cozi, Skylight Calendar, and FamilyWall',
-          'Review of behavioral patterns around shared family calendars',
-          'Analysis of permission models across existing tools'
+          '',
+          '',
+          ''
         ],
         insightMap: [
-          { insight: 'Cozi gives every user equal permissions, leading to clutter and accidental schedule changes.', implication: 'Structure permissions by role instead of flattening access' },
-          { insight: 'Skylight Calendar centers the home around a hardware hub but lacks flexible digital controls.', implication: 'Keep the system software-first and device agnostic' },
-          { insight: 'FamilyWall bundles messaging, lists, and location sharing but overloads the scheduling logic.', implication: 'Focus scope on scheduling rather than a general family hub' },
-          { insight: "Family coordination isn't just about visibility, it's about trust, responsibility, and boundaries.", implication: 'Design around roles: parents want oversight, kids want autonomy, extended members want awareness without complexity' }
+          { insight: '', implication: '' },
+          { insight: '', implication: '' },
+          { insight: '', implication: '' },
+          { insight: "", implication: '' }
         ],
         observations: {
-          heading: 'Design Strategy & System Architecture',
-          leftLabel: 'Design Strategy',
-          rightLabel: 'System Architecture',
+          heading: '',
+          leftLabel: '',
+          rightLabel: '',
           left: [
-            { heading: 'Role Based Permissions', text: 'Different family members should have different levels of control.' },
-            { heading: 'Approval workflows', text: 'Children can suggest activities, but parents approve final scheduling.' },
-            { heading: 'Conflict awareness', text: 'Overlapping events should be surfaced clearly with simple resolution options.' },
-            { heading: 'Lightweight collaboration', text: 'The system should feel simple enough for daily use without overwhelming users.' }
+            { heading: '', text: '' },
+            { heading: '', text: '' },
+            { heading: '', text: '' },
+            { heading: '', text: '' }
           ],
           right: [
-            { heading: 'Parent', items: ['Create and edit events', 'Assign tasks', 'Approve suggested activities', 'Resolve scheduling conflicts'] },
-            { heading: 'Member', items: ['Suggest events', 'Create personal tasks', 'View full family schedule'] },
-            { heading: 'Junior', items: ['View personal tasks', 'Mark tasks complete'] },
-            { heading: 'Relatives/Caregivers', items: ['View relevant schedules', 'RSVP or comment on events'] }
+            { heading: '', items: ['', '', '', ''] },
+            { heading: '', items: ['', '', ''] },
+            { heading: '', items: ['', ''] },
+            { heading: '', items: ['', ''] }
           ]
         },
         solution: [
-          { title: 'Role-based permissions', copy: 'Parents get full control of scheduling and task management, members get bounded autonomy, junior members get simplified participation, and relatives or caregivers get visibility without control.' },
-          { title: 'Approval workflows', copy: 'Children can suggest activities, but parents approve final scheduling, so kids gain autonomy while parents keep oversight.' },
-          { title: 'Conflict awareness', copy: 'Overlapping events are surfaced clearly, with simple options to keep both events, adjust timing, or remove one.' }
+          { title: '', copy: '' },
+          { title: '', copy: '' },
+          { title: '', copy: '' }
         ],
         solutionBreakdown: [
-          { section: 'Creating Events', rawImages: ['./assets/loop-creating-events.webp'], items: [
-            { title: 'Creating Events', copy: "Parents can quickly add events and assign them to specific family members. This keeps everyone's schedule aligned while maintaining clarity around responsibility." }
+          { section: '', rawImages: ['./assets/loop-creating-events.webp'], items: [
+            { title: '', copy: "" }
           ] },
-          { section: 'Requesting Events', rawImages: ['./assets/loop-requesting-events.webp'], items: [
-            { title: 'Requesting Events', copy: 'Kids can suggest activities such as sleepovers or outings. Requests appear as pending events until a parent reviews and approves them, providing autonomy while preserving parental control.' }
+          { section: '', rawImages: ['./assets/loop-requesting-events.webp'], items: [
+            { title: '', copy: '' }
           ] },
-          { section: 'Approvals & Notifications', rawImages: ['./assets/loop-approvals-notifications.webp'], items: [
-            { title: 'Approvals & Notifications', copy: 'Parents receive notifications when new event requests are submitted. They can approve, edit, or decline events directly within the calendar.' }
+          { section: '', rawImages: ['./assets/loop-approvals-notifications.webp'], items: [
+            { title: '', copy: '' }
           ] },
-          { section: 'Conflict Resolution', rawImages: ['./assets/loop-conflict-resolution.webp'], items: [
-            { title: 'Conflict Resolution', copy: 'When events overlap, Loop flags the conflict and presents clear options: keep both events, adjust timing, or remove one. This helps maintain a reliable household schedule.' }
+          { section: '', rawImages: ['./assets/loop-conflict-resolution.webp'], items: [
+            { title: '', copy: '' }
           ] },
-          { section: 'Shared Task Management', imageCount: 2, rawImages: ['./assets/loop-tasks-1.webp', './assets/loop-tasks-2.webp'], items: [
-            { title: 'Shared Task Management', copy: "Parents can create and assign household tasks. Members can create their own tasks for independence. Completion states allow everyone to track progress and maintain accountability." }
+          { section: '', imageCount: 2, rawImages: ['./assets/loop-tasks-1.webp', './assets/loop-tasks-2.webp'], items: [
+            { title: '', copy: "" }
           ] },
-          { section: 'Polls for family decisions', imageCount: 3, rawImages: ['./assets/loop-polls-1.webp', './assets/loop-polls-2.webp', './assets/loop-polls-3.webp'], items: [
-            { title: 'Polls for family decisions', copy: 'Polls allow family members to vote on shared decisions like weekend activities, dinner choices, and family outings. These small interactions encourage participation while keeping coordination lightweight.' }
+          { section: '', imageCount: 3, rawImages: ['./assets/loop-polls-1.webp', './assets/loop-polls-2.webp', './assets/loop-polls-3.webp'], items: [
+            { title: '', copy: '' }
           ] }
         ],
         outcomes: [
-          { label: 'Concept validation', items: ['Modeled against Cozi, Skylight Calendar, and FamilyWall to find the gap: none structure permissions by role', 'Role-aware design let the concept flex to different family structures without overwhelming users'] }
+          { label: '', items: ['', ''] }
         ],
         moreTime: [
-          { title: 'Notifications & Activity Feed', copy: 'Unified inbox for approvals, reminders, comments, and scheduling conflicts.' },
-          { title: 'Shared Lists & Meal Planning', copy: 'Role based grocery lists and meal planning connected to the family calendar.' },
-          { title: 'Advanced Calendar Views', copy: 'Expanded scheduling views including day, week, and month layouts with drag-and-drop conflict resolution.' },
-          { title: 'Mobile & Tablet Optimization', copy: 'Further exploration of simplified interfaces for junior users on smaller screens.' },
-          { title: 'Voice Interaction', copy: 'Hands-free actions such as "Add soccer practice for Rendall" and "What\u2019s on the schedule tonight?"' }
+          { title: '', copy: '' },
+          { title: '', copy: '' },
+          { title: '', copy: '' },
+          { title: '', copy: '' },
+          { title: '', copy: '' }
         ],
-        reflection: "I'm drawn to designing systems where multiple people interact with the same product in different ways. Loop reflects how I approach complex problems, starting with real-world dynamics, defining clear roles and responsibilities, and designing interactions that reduce friction rather than add features.",
+        reflection: "",
         reflectionExtra: [
-          'Rather than designing isolated screens, Loop was built as a role-aware coordination system. Key considerations included permission-based UI states, approval workflows, conflict detection logic, and role-specific task visibility. Structuring interactions around household roles lets the system scale to different family structures without overwhelming users.',
-          'Loop explores how family coordination tools could move beyond simple shared calendars toward role-aware collaboration systems. At its core, the concept focuses on one goal: help families stay connected and organized while respecting the different responsibilities each member holds.'
+          '',
+          ''
         ],
-        reflectionStrengths: ['Systems thinking', 'Behavior driven design', 'Simplifying complex coordination into intuitive experiences']
+        reflectionStrengths: ['', '', '']
       },
       cookbookly: {
         title: 'triONDA', subtitle: 'Machine-learning match predictor', tags: ['Machine Learning', 'Sports Analytics', 'Model Evaluation'], coverImg: './assets/trionda-home.png',
@@ -3060,7 +3060,7 @@ class Component extends DCLogic {
       { lead: ', whether that’s ', phrase: 'thoughtful digital products', freq: 523.25 },
       { lead: ', ', phrase: 'creative side projects', freq: 587.33 },
       { lead: ', or ', phrase: 'desserts from scratch', freq: 659.25 },
-      { lead: '. I’ve even built a fun game for all my recipes ', phrase: 'here', freq: 783.99, href: 'https://cozyeating.app', img: './assets/about-cozyeating.png', caption: 'Cozy Eating' }
+      { lead: '. I build tools for useful software workflows ', phrase: 'here', freq: 783.99, href: '#contact-band', img: './assets/about-cozyeating.png', caption: 'MCP Developer Tools' }
     ];
     const step = this.state.chainStep || 0;
     const typed = this.state.chainTyped || {};
@@ -3196,14 +3196,14 @@ class Component extends DCLogic {
     const headCol = dk ? '#f4f1ea' : '#001666';
     const padOn = '0', padOff = '0 5px';
     const words = {
-      NZ: { img: './assets/about-nz.webp', caption: 'Mahia, NZ', freq: 523.25, text: ' (Go All Blacks!)', below: true },
-      Golf: { img: './assets/about-golf.jpg', caption: 'D1 golf days', freq: 587.33, text: ' (four years of early morning practices and a lot of traveling)' },
+      NZ: { img: './assets/about-nz.webp', caption: 'Dhaka, Bangladesh', freq: 523.25, text: ' (Dhaka is home)', below: true },
+      Golf: { img: './assets/about-golf.jpg', caption: 'BRAC University', freq: 587.33, text: ' (studying Computer Science and Engineering)' },
       Bake: { img: './assets/about-bake.jpg', caption: 'I love baking', freq: 659.25, text: ' with an unnecessarily elaborate ' },
       Fairy: { img: './assets/about-fairy.jpg', caption: 'Miniature fairy bookcases', freq: 698.46, text: '' },
       Imag: { img: '', caption: '', freq: 880, text: '' },
       Drawer: { img: './assets/about-drawer.jpg', caption: 'The tea drawer', freq: 739.99, text: ' (I know, a little intense!)' },
-      Hus: { img: './assets/about-husband.jpg', caption: 'My husband & I', freq: 622.25, text: ', two dogs' },
-      Pets: { img: './assets/about-dogs.jpg', caption: 'Bobi & Po', freq: 783.99, text: ' and three cats' },
+      Hus: { img: './assets/about-husband.jpg', caption: '', freq: 622.25, text: '' },
+      Pets: { img: './assets/about-dogs.jpg', caption: '', freq: 783.99, text: '' },
       Disc: { img: '', caption: '', freq: 698.46, text: ': I’m disciplined, curious, and probably a little too comfortable obsessing over the details.' }
     };
     const out = {};
@@ -3310,7 +3310,7 @@ class Component extends DCLogic {
       out[k + 'LabelOpacity'] = on ? 1 : 0;
       out[k + 'LabelY'] = on ? '34px' : '8px';
     });
-    const nzWord = 'New Zealand';
+    const nzWord = 'Dhaka';
     const nzGen = this.state.nzGen || 0;
     const nzName = nzGen % 2 ? 'nzFlipB' : 'nzFlipA';
     out.nzLetters = nzWord.split('').map((ch, i) => ({
@@ -3370,7 +3370,7 @@ class Component extends DCLogic {
     out.wordNumPE = ((this.state.wordOpen || {}).Num) ? 'none' : 'auto';
     out.wordPsPE = ((this.state.wordOpen || {}).Ps) ? 'none' : 'auto';
     out.wordBakeDone = !!((this.state.wordOpen || {}).Bake) && (((this.state.wordTyped || {}).Bake) || '').length >= ' with an unnecessarily elaborate '.length;
-    const numText = ', helping grow the company from around 20K to 10M monthly active users';
+    const numText = ', building practical AI systems and connecting models to real workflows';
     out.wordNumOpen = !!((this.state.wordOpen || {}).Num);
     out.wordNumText = ((this.state.wordTyped || {}).Num) || '';
     out.wordNumCaret = out.wordNumOpen && out.wordNumText.length < numText.length;
@@ -4016,11 +4016,11 @@ class Component extends DCLogic {
       wordPopW: (s.wordPop ? s.wordPop.wide : (this._lastPop && this._lastPop.wide)) ? '290px' : '240px',
       ...this.wordHandlers(),
       ...this.chainVals(),
-      photoHoverPortrait1: (e) => this.setPhotoTooltip('I love baking!', e),
-      photoHoverPortrait2: (e) => this.setPhotoTooltip('Back home in NZ', e),
-      photoHoverPortrait3: (e) => this.setPhotoTooltip('My dogs, Bobi & Po', e),
-      photoHoverDogs: (e) => this.setPhotoTooltip('My dogs, Bobi & Po', e),
-      photoHoverLearnMore: (e) => this.setPhotoTooltip('Me & my dog, Bobi', e),
+      photoHoverPortrait1: (e) => this.setPhotoTooltip('', e),
+      photoHoverPortrait2: (e) => this.setPhotoTooltip('', e),
+      photoHoverPortrait3: (e) => this.setPhotoTooltip('', e),
+      photoHoverDogs: (e) => this.setPhotoTooltip('', e),
+      photoHoverLearnMore: (e) => this.setPhotoTooltip('', e),
       photoHoverBaking: (e) => this.setPhotoTooltip('I love baking!', e),
       photoHoverGolf: (e) => this.setPhotoTooltip('Former golfer, but still love a good range sesh', e),
       photoHoverOff: () => this.setState({ photoTooltip: null }),
