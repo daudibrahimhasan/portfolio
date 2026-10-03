@@ -7,7 +7,7 @@ The goal is not to redesign the portfolio. The goal is to extend the existing si
 ## 1. Non-negotiable rules
 
 1. **Treat the current rendered site as the source of truth.** Preserve its layout, copy style, motion, spacing, colors, typography, and playful interactions unless the user explicitly asks for a redesign.
-2. **Do not edit anything inside `ref/`.** It is the untouched archive used for comparison and recovery. All working changes belong in the `site2.0` root.
+2. **Keep the reference archive outside the public website root.** It is preserved at `D:\demo-port-web\cleanup-review\reference-archive` for recovery. All working changes belong in the `site2.0` root.
 3. **Do not convert the site to React, Next.js, Vite, Tailwind, or another framework unless the user explicitly asks.** The current site already uses React internally through the Design Component runtime in `support.js`.
 4. **Do not replace `support.js`, `image-slot.js`, `kiwi-piece.jsx`, or `kiwi-stats.js` with simplified versions.** They contain real behavior used across the site.
 5. **Do not open `index.html` directly with `file://`.** Run `npm start` and use `http://127.0.0.1:4173`. Component imports, modules, audio, and nested assets require an HTTP server.
@@ -434,7 +434,7 @@ Before editing:
 2. Inspect the relevant template block and its corresponding state/render values.
 3. Confirm whether the new item is an internal case study, external project, coming-soon card, or Playground experiment.
 4. Inventory the supplied text, metrics, links, and assets. Stop rather than inventing missing facts.
-5. Keep `ref/` untouched.
+5. Keep the reference archive outside the public website root and untouched.
 
 While editing:
 
@@ -475,7 +475,7 @@ A change is complete only when all applicable statements are true:
 - [ ] Mobile layout works at and below `860px`.
 - [ ] Keyboard, focus, labels, and reduced-motion behavior are preserved.
 - [ ] No new console errors appear.
-- [ ] `ref/` remains unchanged.
+- [ ] The reference archive remains outside the public website root and unchanged.
 
 ## 20. Things an AI agent must not do
 
