@@ -1,0 +1,128 @@
+[
+  {
+    "name": "programming-hero",
+    "file": "programming-hero.svg",
+    "sourcePage": "https://www.programming-hero.com",
+    "assetURL": "https://www.programming-hero.com/header/ph-logo.svg",
+    "bytes": 14207,
+    "type": "image/svg+xml"
+  },
+  {
+    "name": "grafana",
+    "file": "grafana.svg",
+    "sourcePage": "https://grafana.com",
+    "assetURL": "https://a-us.storyblok.com/f/567658451994139/143x24/8360e7918b/grafana-header-logo.svg",
+    "bytes": 12962,
+    "type": "image/svg+xml"
+  },
+  {
+    "name": "duburi",
+    "file": "duburi.png",
+    "sourcePage": "https://bracuduburi.com",
+    "assetURL": "https://ik.imagekit.io/bracuduburiauv/assets/img/logo.png",
+    "bytes": 49809,
+    "type": "image/png"
+  },
+  {
+    "name": "crawl4ai",
+    "file": "crawl4ai.svg",
+    "sourcePage": "https://crawl4ai.com",
+    "assetURL": "https://crawl4ai.com/assets/logo.cc61ca8c.svg",
+    "bytes": 18970,
+    "type": "image/svg+xml"
+  },
+  {
+    "name": "equistamp",
+    "file": "equistamp.png",
+    "sourcePage": "https://www.equistamp.com",
+    "assetURL": "https://www.equistamp.com/logoBlue.png",
+    "bytes": 4989,
+    "type": "image/png"
+  },
+  {
+    "name": "anthropic",
+    "file": "anthropic.svg",
+    "sourcePage": "https://www.codepath.org",
+    "assetURL": "https://www.codepath.org/hubfs/Anthropic_logo%201.svg",
+    "bytes": 2405,
+    "type": "image/svg+xml"
+  },
+  {
+    "name": "deeplearning-ai",
+    "file": "deeplearning-ai.png",
+    "sourcePage": "https://www.deeplearning.ai",
+    "assetURL": "https://www.deeplearning.ai/dlai/assets/dlai-logo.png",
+    "bytes": 44291,
+    "type": "image/png"
+  },
+  {
+    "name": "codepath",
+    "file": "codepath.png",
+    "sourcePage": "https://www.codepath.org",
+    "assetURL": "https://www.codepath.org/hubfs/logoblack.png",
+    "bytes": 11187,
+    "type": "image/png"
+  },
+  {
+    "name": "gregorians-north-america",
+    "file": "gregorians-north-america.jpg",
+    "sourcePage": "https://www.gregoriansofna.org",
+    "assetURL": "https://simplyk-bucket-production.s3.ca-central-1.amazonaws.com/organizations/5/7/8/c/578cd7ec-0c79-48db-9b02-396ce2cef773/4d6618a7-f454-4514-b946-4b924c2efba7.jpeg",
+    "bytes": 18289,
+    "type": "image/jpeg"
+  },
+  {
+    "name": "apart-research",
+    "file": "apart-research.svg",
+    "sourcePage": "https://apartresearch.com",
+    "type": "image/svg+xml",
+    "note": "Official mark; original #255642 restored from source CSS."
+  },
+  {
+    "name": "stampyai",
+    "file": "stampyai.svg",
+    "sourcePage": "https://stampy.ai",
+    "type": "image/svg+xml",
+    "note": "Exact inline vector geometry extracted from source page; external CSS not copied."
+  },
+  {
+    "name": "coursera",
+    "file": "coursera.svg",
+    "sourcePage": "https://www.coursera.org",
+    "type": "image/svg+xml",
+    "note": "Inline vector with original light-theme fill #0056D2 restored from source CSS."
+  },
+  {
+    "name": "google",
+    "file": "google.svg",
+    "sourcePage": "https://about.google/brand-resource-center/logos-list",
+    "type": "image/svg+xml",
+    "note": "Exact inline vector geometry extracted from source page; external CSS not copied."
+  },
+  {
+    "name": "camp-new",
+    "file": "ai-safety-camp.png",
+    "assetURL": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vYLy-T5D2Up44kC43leBaB7Nw3cOwqdY51FDhp9d0GhEDnPOCMrinRU-TC8PkDIS0cLuEsdHikpu7K-djsnO3IajbAOmLX4sDeY2mFG5v7_HGzuqf9zsmzrPhzIeXa4YnGLffc6kQTN6Mt2q5gUYc8tIG1ncp7Sc5jVSmGTuiA_VE4pXf8fAEQtIXx=w16383",
+    "sourcePage": "https://www.aisafety.camp"
+  },
+  {
+    "name": "nexasity",
+    "file": "nexasity-ai.jpg",
+    "assetURL": "https://media.licdn.com/dms/image/v2/D4E0BAQEUcEcUn5m9gA/company-logo_200_200/B4EZnkQ7KcKkAI-/0/1760471269736?e=2147483647&v=beta&t=AIgLECNexSLVGgzkikFjs5tWXtVNqSjlooHmWT_aH-o",
+    "sourcePage": "https://www.linkedin.com/company/nexasityai"
+  },
+  {
+    "name": "brac-university",
+    "file": "brac-university.png",
+    "sourcePage": "https://www.bracu.ac.bd/media-center",
+    "assetURL": "https://www.bracu.ac.bd/sites/default/files/resources/media/bracu_logo_12-0-2022.png",
+    "note": ""
+  },
+  {
+    "name": "wseh",
+    "file": "wseh.png",
+    "assetURL": "https://cdn.discordapp.com/icons/777918345202368513/f6cc2df204c0e976aedcd2d74d396900.png?size=1024",
+    "sourcePage": "https://discord.com/invite/wseh-practice-english-speaking-777918345202368513",
+    "note": "Server icon retrieved through public Discord invite API."
+  }
+]
