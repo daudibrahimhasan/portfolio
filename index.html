@@ -92,12 +92,12 @@
 <meta name="ext-resource-dependency" content="./assets/study-groups-cover.webp">
 <meta name="ext-resource-dependency" content="./assets/study-party-thumb.webp">
 <meta name="ext-resource-dependency" content="./assets/bungalow-thumb.webp">
-<meta name="ext-resource-dependency" content="./assets/supportguard-dashboard.png">
+<meta name="ext-resource-dependency" content="./assets/cam-cabinet-thumb.png">
 <meta name="ext-resource-dependency" content="./assets/bungalow-cover.webp">
 <meta name="ext-resource-dependency" content="./assets/loop-thumb.webp">
 <meta name="ext-resource-dependency" content="./assets/cookbookly-thumb.webp">
-<meta name="ext-resource-dependency" content="./assets/docops-approved.png">
-<meta name="ext-resource-dependency" content="./assets/citexai-home.png">
+<meta name="ext-resource-dependency" content="./assets/numerade-nav-thumb.webp">
+<meta name="ext-resource-dependency" content="./assets/personal-ai-thumb.webp">
 </head>
 <body>
 <noscript><main><h1>Daud Ibrahim Hassan</h1><p>Useful systems, thoughtful agents, and a little stubbornness about reliability.</p><p><a href="/engineer/">AI Engineer</a> <a href="/researcher/">Student Researcher</a></p></main></noscript>
@@ -582,7 +582,7 @@
             <button type="button" onClick="{{ goAbout }}" style-hover="box-shadow:6px 10px 0 rgba(0,0,0,0.05),0 3px 6px rgba(0,0,0,0.05);transform:scale(0.96)" style-focus="outline:none" style="all: unset; cursor: pointer; color: #1c1c24; font-weight: 500; font-size: 14px; padding: 14px 26px; border-radius: 8px; background-color: #FFCF3A; transition: box-shadow 0.3s ease, transform 0.25s cubic-bezier(0.4,0,0.2,1)">Learn More</button>
           </div>
           <div onMouseMove="{{ photoHoverLearnMore }}" onMouseLeave="{{ photoHoverOff }}" style="transform:rotate(-2deg);transition:transform 0.3s cubic-bezier(0.4,0,0.2,1)" style-hover="transform:rotate(0deg) scale(1.04)">
-            <image-slot id="learn-more-photo" src="./assets/research-unlearning.svg" shape="rounded" radius="18" style="width:100%;aspect-ratio:4/5;display:block" placeholder="AI systems diagram"></image-slot>
+            <image-slot id="learn-more-photo" src="./assets/daud-systems-portrait.svg" shape="rounded" radius="18" style="width:100%;aspect-ratio:4/5;display:block" placeholder="AI systems diagram"></image-slot>
           </div>
         </div>
       </section>
@@ -598,7 +598,7 @@
         <div style="display:flex;flex-direction:column;gap:28px">
           <a href="#contact-band" target="_blank" rel="noopener" onMouseEnter="{{ cozyHoverOn }}" onMouseLeave="{{ cozyHoverOff }}" style="display:block;text-decoration:none;position:relative;border:1px solid {{ theme.border }};border-radius:16px;padding:12px;transform:rotate(-0.3deg);transition:transform 0.3s cubic-bezier(0.4,0,0.2,1),box-shadow 0.3s ease,background-color 0.4s ease;background-color:{{ theme.surface }}" style-hover="transform: translateY(-8px) rotate(0deg); box-shadow: 6px 10px 0 rgba(0, 0, 0, 0.05),             0 3px 6px rgba(0, 0, 0, 0.05);">
             <div style="position:relative;overflow:hidden;border-radius:8px">
-              <img src="/assets/skeletree-terminal.png" alt="skeletree MCP developer tool terminal" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover;border:0;display:block">
+              <iframe src="tile2/index.html" loading="lazy" title="MCP Developer Tools" style="width:100%;aspect-ratio:16/9;border:0;display:block"></iframe>
             </div>
             <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 12px;margin:12px 0 6px">
               <h3 style="font-family: Perfectly Nineties; font-weight: 400; font-size: 22px; color: {{ theme.headingAlt }}; margin: 0; letter-spacing: 0.5px;min-width:0">MCP Developer Tools</h3>
@@ -623,7 +623,7 @@
                   <div role="img" aria-label="{{ p.title }}" style="width:100%;aspect-ratio:16/9;border-radius:8px;background-image:{{ p.imgUrl }};background-size:cover;background-position:top left;background-repeat:no-repeat"></div>
                 </sc-if>
                 <sc-if value="{{ p.noImg }}" hint-placeholder-val="{{ true }}">
-                  <image-slot id="playground-{{ p.slug }}" shape="rounded" radius="8" style="width:100%;aspect-ratio:16/9" placeholder="Preview not available yet"></image-slot>
+                  <image-slot id="playground-{{ p.slug }}" shape="rounded" radius="8" style="width:100%;aspect-ratio:16/9" placeholder="Drop a shot of this experiment"></image-slot>
                 </sc-if>
               </div>
               <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 12px;margin:12px 0 6px">
@@ -1300,7 +1300,7 @@
         <div style="display:flex;flex-direction:column;gap:12px;text-align:left">
           
           <a href="{{ calendlyUrl }}" target="_blank" rel="noopener" style-hover="transform: translateY(-8px); box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.05);" style="display: flex; align-items: center; gap: 16px; background: {{ theme.surfaceWarm }}; border-radius: 16px; padding: 20px 24px; text-decoration: none; transition: transform 0.3s cubic-bezier(0.4,0,0.2,1),box-shadow 0.3s ease; border-width: 1px; border-style: solid; border-color: #E0E1EA">
-            <span style="font-size:16px;font-weight:500;color:{{ theme.body }}">Cal.com</span>
+            <span style="font-size:16px;font-weight:500;color:{{ theme.body }}">Calendly</span>
             <span style="margin-left:auto;font-size:15px;color:{{ theme.body }};display:flex;align-items:center;gap:6px">Book a 30 min meeting ↗</span>
           </a><a href="mailto:{{ contactEmail }}" style-hover="transform: translateY(-8px); box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.05);" style="display: flex; align-items: center; gap: 16px; background: {{ theme.surfaceWarm }}; border-radius: 16px; padding: 20px 24px; text-decoration: none; transition: transform 0.3s cubic-bezier(0.4,0,0.2,1),box-shadow 0.3s ease; border-width: 1px; border-style: solid; border-color: #E0E1EA">
             <span style="font-size:16px;font-weight:500;color:{{ theme.body }}">Contact</span>
@@ -1989,22 +1989,22 @@ class Component extends DCLogic {
           { title: '', copy: '' }
         ],
         solutionBreakdown: [
-          { section: '', rawImages: [''], items: [
+          { section: '', rawImages: ['./assets/loop-creating-events.webp'], items: [
             { title: '', copy: "" }
           ] },
-          { section: '', rawImages: [''], items: [
+          { section: '', rawImages: ['./assets/loop-requesting-events.webp'], items: [
             { title: '', copy: '' }
           ] },
-          { section: '', rawImages: [''], items: [
+          { section: '', rawImages: ['./assets/loop-approvals-notifications.webp'], items: [
             { title: '', copy: '' }
           ] },
-          { section: '', rawImages: [''], items: [
+          { section: '', rawImages: ['./assets/loop-conflict-resolution.webp'], items: [
             { title: '', copy: '' }
           ] },
-          { section: '', imageCount: 2, rawImages: ['', ''], items: [
+          { section: '', imageCount: 2, rawImages: ['./assets/loop-tasks-1.webp', './assets/loop-tasks-2.webp'], items: [
             { title: '', copy: "" }
           ] },
-          { section: '', imageCount: 3, rawImages: ['', '', ''], items: [
+          { section: '', imageCount: 3, rawImages: ['./assets/loop-polls-1.webp', './assets/loop-polls-2.webp', './assets/loop-polls-3.webp'], items: [
             { title: '', copy: '' }
           ] }
         ],
@@ -2431,7 +2431,7 @@ class Component extends DCLogic {
     let a = window.__kiwiMusic;
     if (!a) {
       try {
-        a = new Audio(this.assetUrl('assets/portfolio-music.mp3'));
+        a = new Audio(this.assetUrl('assets/welcome-ambience.mp3'));
         a.loop = true;
         a.volume = 0;
         a.currentTime = 0;
@@ -2556,7 +2556,7 @@ class Component extends DCLogic {
       if (window.__kiwiJinglePlayed) return;
       window.__kiwiJinglePlayed = true;
       if (!this._kiwiJingle) {
-        this._kiwiJingle = new Audio('./assets/kiwi-feed.mp3');
+        this._kiwiJingle = new Audio('./assets/kiwi-page-jingle.wav');
         this._kiwiJingle.preload = 'auto';
         this._kiwiJingle.volume = 1;
       }
@@ -2691,7 +2691,7 @@ class Component extends DCLogic {
     const setBodyClass = (on) => { if (typeof document !== 'undefined') document.body.classList[on ? 'add' : 'remove']('disco-mode'); };
     if (typeof window !== 'undefined' && window.__discoAudio) this._discoAudio = window.__discoAudio;
     if (!this._discoAudio) {
-      this._discoAudio = new Audio(encodeURI('./assets/portfolio-music.mp3'));
+      this._discoAudio = new Audio(encodeURI('./uploads/ES_And Then You Came Along - Duckmaw - 0000-33801.wav'));
       this._discoAudio.loop = true;
       this._discoAudio.volume = 0.3;
       if (typeof window !== 'undefined') window.__discoAudio = this._discoAudio;
@@ -3069,7 +3069,7 @@ class Component extends DCLogic {
       { lead: ', whether that’s ', phrase: 'thoughtful digital products', freq: 523.25 },
       { lead: ', ', phrase: 'creative side projects', freq: 587.33 },
       { lead: ', or ', phrase: 'desserts from scratch', freq: 659.25 },
-      { lead: '. I build tools for useful software workflows ', phrase: 'here', freq: 783.99, href: '#contact-band', img: '', caption: 'MCP Developer Tools' }
+      { lead: '. I build tools for useful software workflows ', phrase: 'here', freq: 783.99, href: '#contact-band', img: './assets/about-cozyeating.png', caption: 'MCP Developer Tools' }
     ];
     const step = this.state.chainStep || 0;
     const typed = this.state.chainTyped || {};
@@ -3125,7 +3125,7 @@ class Component extends DCLogic {
   }
   primeGolfAudio() {
     if (!this._golfAudio) {
-      this._golfAudio = new Audio('./assets/kiwi-feed.mp3');
+      this._golfAudio = new Audio('./assets/golf-hole.mp3');
       this._golfAudio.preload = 'auto';
       this._golfAudio.volume = 0.65;
       this._golfAudio.load();
@@ -3206,13 +3206,13 @@ class Component extends DCLogic {
     const padOn = '0', padOff = '0 5px';
     const words = {
       NZ: { img: './assets/about-nz.webp', caption: 'Dhaka, Bangladesh', freq: 523.25, text: ' (Dhaka is home)', below: true },
-      Golf: { img: '', caption: 'BRAC University', freq: 587.33, text: ' (studying Computer Science and Engineering)' },
-      Bake: { img: '', caption: 'I love baking', freq: 659.25, text: ' with an unnecessarily elaborate ' },
-      Fairy: { img: '', caption: 'Miniature fairy bookcases', freq: 698.46, text: '' },
+      Golf: { img: './assets/about-golf.jpg', caption: 'BRAC University', freq: 587.33, text: ' (studying Computer Science and Engineering)' },
+      Bake: { img: './assets/about-bake.jpg', caption: 'I love baking', freq: 659.25, text: ' with an unnecessarily elaborate ' },
+      Fairy: { img: './assets/about-fairy.jpg', caption: 'Miniature fairy bookcases', freq: 698.46, text: '' },
       Imag: { img: '', caption: '', freq: 880, text: '' },
-      Drawer: { img: '', caption: 'The tea drawer', freq: 739.99, text: ' (I know, a little intense!)' },
-      Hus: { img: '', caption: '', freq: 622.25, text: '' },
-      Pets: { img: '', caption: '', freq: 783.99, text: '' },
+      Drawer: { img: './assets/about-drawer.jpg', caption: 'The tea drawer', freq: 739.99, text: ' (I know, a little intense!)' },
+      Hus: { img: './assets/about-husband.jpg', caption: '', freq: 622.25, text: '' },
+      Pets: { img: './assets/about-dogs.jpg', caption: '', freq: 783.99, text: '' },
       Disc: { img: '', caption: '', freq: 698.46, text: ': I’m disciplined, curious, and probably a little too comfortable obsessing over the details.' }
     };
     const out = {};
@@ -3490,8 +3490,8 @@ class Component extends DCLogic {
     const workProjectsRight = s.isMobile ? [] : workProjects.filter((_, i) => i % 2 === 1);
 
     const playgroundCards = [
-      { slug: 'exp-2', title: 'Voice Agent Experiments', tags: [], blurb: 'Voice workflows for answering calls, collecting structured information and routing requests to the right next step.', rotate: 0.4, embed: '', href: '#contact-band', hasHref: true, cta: 'Ask about the workflow →', note: 'Built and tested end to end, from call flow and prompts to integrations and structured outputs.' },
-      { slug: 'exp-1', title: 'AI Evaluation Experiments', tags: ['Ongoing'], blurb: 'Small experiments for testing hallucinations, citations, confidence, escalation and agent behavior under failure.', rotate: -0.4, img: 'assets/supportguard-evaluations.png' },
+      { slug: 'exp-2', title: 'Voice Agent Experiments', tags: [], blurb: 'Voice workflows for answering calls, collecting structured information and routing requests to the right next step.', rotate: 0.4, embed: 'tile3/index.html', href: 'https://networkingcringe.vercel.app/', hasHref: true, cta: 'See the workflow →', note: 'Built and tested end to end, from call flow and prompts to integrations and structured outputs.' },
+      { slug: 'exp-1', title: 'AI Evaluation Experiments', tags: ['Ongoing'], blurb: 'Small experiments for testing hallucinations, citations, confidence, escalation and agent behavior under failure.', rotate: -0.4, img: 'assets/moodboard.png' },
     ].map(p => ({
       ...p,
       noImg: !p.img && !p.embed,
@@ -4253,7 +4253,7 @@ class Component extends DCLogic {
         return { label, bottom: i * 34, spineColor: spineColors[i % spineColors.length], transform: `rotate(${r.rot}deg)` };
       }),
       contactEmail: this.props.contactEmail ?? 'daudibrahimhasan@gmail.com',
-      calendlyUrl: this.props.calendlyUrl ?? 'https://cal.com/daud-ibrahim-pzuxyh/30min'
+      calendlyUrl: this.props.calendlyUrl ?? 'https://calendly.com/brookiebeswick/30min'
     };
   }
 }

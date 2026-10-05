@@ -1,0 +1,802 @@
+[
+  {
+    "title": "SupportGuard",
+    "meta": "LLM / Agents",
+    "copy": "Production-built 8-route UI, 40-question eval set, 6 escalation rules, and captured dashboard",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 66
+  },
+  {
+    "title": "Duburi AI Vision",
+    "meta": "Robotics",
+    "copy": "Strong simulator evidence and a clear robotics progression story",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 6
+  },
+  {
+    "title": "whyLayer",
+    "meta": "LLM / Agents",
+    "copy": "Distinct decision-interrogation concept with a strong interface",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 17
+  },
+  {
+    "title": "MarkLens",
+    "meta": "Research Tools",
+    "copy": "251,350-position research pipeline, released Observatory, clear methods, and unusually concrete findings",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 43,
+    "url": "https://doi.org/10.5281/zenodo.21828832",
+    "link": "Read the preprint ↗"
+  },
+  {
+    "title": "skeletree",
+    "meta": "Developer Tools",
+    "copy": "52 tests, focused developer problem, and explainable local architecture",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 9
+  },
+  {
+    "title": "eFootball Squad Analyzer",
+    "meta": "AI / ML",
+    "copy": "116 tests pass across backend and frontend; deterministic scoring boundary is clear",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 5
+  },
+  {
+    "title": "NexaVision",
+    "meta": "Computer Vision",
+    "copy": "Local YOLOX-nano and ONNX Runtime Web demo loads with browser-side controls and strong existing evidence",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "YOLOX-nano",
+      "ONNX Runtime Web"
+    ],
+    "logos": [],
+    "sourceRow": 42
+  },
+  {
+    "title": "QueueStorm",
+    "meta": "LLM / Agents",
+    "copy": "30 tests pass across schema, safety, malformed input, and prompt-injection cases",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 16
+  },
+  {
+    "title": "Visored",
+    "meta": "Computer Vision",
+    "copy": "Next.js build and 8 frontend tests pass; FastAPI, PyTorch, WebSockets, and SQLite architecture is implemented",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Next.js",
+      "FastAPI",
+      "PyTorch",
+      "WebSockets",
+      "SQLite"
+    ],
+    "logos": [],
+    "sourceRow": 21
+  },
+  {
+    "title": "BlackWire",
+    "meta": "Developer Tools",
+    "copy": "Release check and 27 tests pass; local security boundary is clearly documented",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 7
+  },
+  {
+    "title": "OffBall",
+    "meta": "Computer Vision",
+    "copy": "85 tests pass and the synthetic radar-to-report pipeline runs end to end",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 10
+  },
+  {
+    "title": "Ayah",
+    "meta": "AI / ML",
+    "copy": "46 tests pass across Arabic normalization, matching, and the full Quran corpus",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 13
+  },
+  {
+    "title": "World Cup 2026 Predictor",
+    "meta": "AI / ML",
+    "copy": "147-match validation compares incremental Elo with an Elo-anchored stacking ensemble",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 15
+  },
+  {
+    "title": "Figures Maker",
+    "meta": "Research Tools",
+    "copy": "Deterministic research renderer; 9 tests and 17 subtests pass with PNG/SVG/PDF outputs",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 58
+  },
+  {
+    "title": "pdf-maker",
+    "meta": "Full-stack",
+    "copy": "89 tests pass, the Next.js production build passes, and a generated PDF artifact exists",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Next.js"
+    ],
+    "logos": [],
+    "sourceRow": 12
+  },
+  {
+    "title": "CiteXai",
+    "meta": "LLM / Agents",
+    "copy": "Important citation-hallucination problem and complete build",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 20
+  },
+  {
+    "title": "Duburi Simulator",
+    "meta": "Robotics",
+    "copy": "8/8 structural tests pass for the 8-thruster ROS 2/Gazebo AUV simulation",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "ROS 2",
+      "Gazebo"
+    ],
+    "logos": [],
+    "sourceRow": 67
+  },
+  {
+    "title": "Inkstead",
+    "meta": "Developer Tools",
+    "copy": "Broad parser, safety, conversion, editor, and IEEE-layout checks pass",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 11
+  },
+  {
+    "title": "seatSPAN",
+    "meta": "Automation",
+    "copy": "31 tests and unusually clear safety boundaries for real university workflow",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 8
+  },
+  {
+    "title": "AI Benchmark Tester",
+    "meta": "Research Tools",
+    "copy": "FastAPI benchmark interface with three provider adapters.",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "FastAPI"
+    ],
+    "logos": [],
+    "sourceRow": 52
+  },
+  {
+    "title": "Multi-Provider Chat Harness",
+    "meta": "Developer Tools",
+    "copy": "764-line Python CLI compiles and supports routing, streaming, telemetry, and model switching",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Python"
+    ],
+    "logos": [],
+    "sourceRow": 75
+  },
+  {
+    "title": "MCP Chat",
+    "meta": "Developer Tools",
+    "copy": "Fourteen-file Python CLI with MCP tools, prompts, resources, and document mentions; modules compile",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Python"
+    ],
+    "logos": [],
+    "sourceRow": 63
+  },
+  {
+    "title": "Chatterbox TTS Enhanced",
+    "meta": "Full-stack",
+    "copy": "Five-workflow Gradio audio UI; 10 core Python files compile",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Python",
+      "Gradio"
+    ],
+    "logos": [],
+    "sourceRow": 65
+  },
+  {
+    "title": "False9",
+    "meta": "LLM / Agents",
+    "copy": "Large cross-tool agent-definition framework with a clear software-audit problem",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 23
+  },
+  {
+    "title": "CAIS",
+    "meta": "Full-stack",
+    "copy": "Substantial relational database project with code, schemas, report, and UI evidence",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 28
+  },
+  {
+    "title": "StockIND",
+    "meta": "Research Tools",
+    "copy": "Ambitious Flask, ML, sentiment, WebSocket, and paper-trading architecture",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 33
+  },
+  {
+    "title": "Board Question Data Pipeline",
+    "meta": "Data",
+    "copy": "Seven verified CSV outputs contain 3,253 Physics and Chemistry question rows",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 59
+  },
+  {
+    "title": "Ranked Quiz Generator",
+    "meta": "Developer Tools",
+    "copy": "Python CLI compiles and supports chapter filters, 12-set generation, and ranked selection",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Python"
+    ],
+    "logos": [],
+    "sourceRow": 60
+  },
+  {
+    "title": "readLESS",
+    "meta": "Full-stack",
+    "copy": "Strong Bangla-first education story and verified demo build",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 14
+  },
+  {
+    "title": "AutoCare AI",
+    "meta": "Full-stack",
+    "copy": "Multi-role Next.js automotive platform; frontend build passed with 10 generated pages",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Next.js"
+    ],
+    "logos": [],
+    "sourceRow": 57
+  },
+  {
+    "title": "codePromptx",
+    "meta": "Full-stack",
+    "copy": "Typecheck and build pass; clear prompt-practice interface",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 19
+  },
+  {
+    "title": "Reddit Intent Lead Engine",
+    "meta": "Data",
+    "copy": "Concrete safety boundaries and durable SQLite, CSV, and Markdown output paths",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "SQLite"
+    ],
+    "logos": [],
+    "sourceRow": 26
+  },
+  {
+    "title": "NexMark AI",
+    "meta": "Full-stack",
+    "copy": "Clear bookmark-organization problem and complete popup UI",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 30
+  },
+  {
+    "title": "Calyz",
+    "meta": "Mobile",
+    "copy": "Native Android architecture covers local call-log analytics and privacy controls",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 31
+  },
+  {
+    "title": "RNDUP",
+    "meta": "Automation",
+    "copy": "Clear Google Apps Script deadline aggregation architecture with deduplication and secret handling",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Google Apps Script"
+    ],
+    "logos": [],
+    "sourceRow": 45
+  },
+  {
+    "title": "The Peshawar League",
+    "meta": "Full-stack",
+    "copy": "Zero-dependency Node referral app with 5 screens, 11 API operations, and 13 business rules",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Node"
+    ],
+    "logos": [],
+    "sourceRow": 62
+  },
+  {
+    "title": "SpendXAI",
+    "meta": "Full-stack",
+    "copy": "Large React and TypeScript interface surface",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "React",
+      "TypeScript"
+    ],
+    "logos": [],
+    "sourceRow": 39
+  },
+  {
+    "title": "ThesisMap",
+    "meta": "Full-stack",
+    "copy": "Useful academic workflow with verified 210-record local interface",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 18
+  },
+  {
+    "title": "RainXai",
+    "meta": "Full-stack",
+    "copy": "Bangladesh-first expense workflow with offline and bilingual voice-entry design",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 36
+  },
+  {
+    "title": "DHALI Pet Commerce",
+    "meta": "Full-stack",
+    "copy": "13-product, 10-category Next.js commerce UI verified; typecheck, lint, and 40-page build pass; live Supabase flows remain untested",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Next.js",
+      "Supabase"
+    ],
+    "logos": [],
+    "sourceRow": 55
+  },
+  {
+    "title": "AgroHaat",
+    "meta": "Full-stack",
+    "copy": "PHP and MySQL marketplace structure includes transporter bidding and tracking",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "MySQL",
+      "PHP"
+    ],
+    "logos": [],
+    "sourceRow": 38
+  },
+  {
+    "title": "Nexasity",
+    "meta": "Full-stack",
+    "copy": "Large portfolio surface and successful production build",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 29
+  },
+  {
+    "title": "Unkahi",
+    "meta": "Full-stack",
+    "copy": "Production build passed and the anonymous-link interface loaded locally",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 22
+  },
+  {
+    "title": "Website Reliability Toolkit",
+    "meta": "Infrastructure",
+    "copy": "Three PowerShell health, smoke, and uptime scripts pass parser validation",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 68
+  },
+  {
+    "title": "Saved Reels Exporter",
+    "meta": "Developer Tools",
+    "copy": "Two-file Manifest V3 extension parses and passes JavaScript syntax validation",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "JavaScript"
+    ],
+    "logos": [],
+    "sourceRow": 64
+  },
+  {
+    "title": "getCcode",
+    "meta": "Full-stack",
+    "copy": "Production build passed and the complete service landing page loaded locally",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 27
+  },
+  {
+    "title": "GitChrono",
+    "meta": "Developer Tools",
+    "copy": "Simple, transparent CLI with an honest estimation limitation",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 24
+  },
+  {
+    "title": "oss-hunter",
+    "meta": "Developer Tools",
+    "copy": "Five Python modules and CLI flows verified; 4 issue attempts recorded without claiming a merged PR",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Python"
+    ],
+    "logos": [],
+    "sourceRow": 53
+  },
+  {
+    "title": "BRACU Email Sender",
+    "meta": "Automation",
+    "copy": "Structured JSON drafts and a small parse-valid Python SMTP utility",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Python"
+    ],
+    "logos": [],
+    "sourceRow": 51
+  },
+  {
+    "title": "AI Lead Email Sender",
+    "meta": "Data",
+    "copy": "Two Python outreach scripts compile and use three structured lead datasets",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Python"
+    ],
+    "logos": [],
+    "sourceRow": 79
+  },
+  {
+    "title": "Remote AI Job Analysis",
+    "meta": "Data",
+    "copy": "Exactly 100 job records, an Excel analysis workbook, and 200 tailored-resume artifacts",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 69
+  },
+  {
+    "title": "Research Outreach Master Tracker",
+    "meta": "Data",
+    "copy": "Five scripts validated; workbook, five previews, four CVs, and ten outreach records",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 78
+  },
+  {
+    "title": "Med Spa Prospecting Pipeline",
+    "meta": "Data",
+    "copy": "Six scripts compile; 98 CSV rows, three workbooks, and two operating guides",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 80
+  },
+  {
+    "title": "Cross-Vertical Lead Research Library",
+    "meta": "Research Tools",
+    "copy": "21 files across five verticals and three city research sets, including three workbooks",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 85
+  },
+  {
+    "title": "Research Outreach Workspace",
+    "meta": "Automation",
+    "copy": "Clear evidence, approval, status, and follow-up workflow for academic outreach",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 50
+  },
+  {
+    "title": "fellowship-ops",
+    "meta": "LLM / Agents",
+    "copy": "Thoughtful agent workflow for source screening, eligibility gates, ranking, deduplication, and drafting",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 49
+  },
+  {
+    "title": "Med Spa Chatbot Knowledge Base Factory",
+    "meta": "Automation",
+    "copy": "Six knowledge bases and five complete brand/build/outreach preparation packages",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 81
+  },
+  {
+    "title": "Cienega Medical AI Demo",
+    "meta": "Full-stack",
+    "copy": "Working branded HTML/CSS concierge demo with local knowledge base and captured UI",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "HTML",
+      "CSS"
+    ],
+    "logos": [],
+    "sourceRow": 61
+  },
+  {
+    "title": "Tadaaa / surpriseMe",
+    "meta": "Full-stack",
+    "copy": "Next.js 15 application built successfully with 4 generated pages and a verified local UI",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Next.js"
+    ],
+    "logos": [],
+    "sourceRow": 56
+  },
+  {
+    "title": "Lunaria",
+    "meta": "Full-stack",
+    "copy": "Visually strong commerce implementation and successful build",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 34
+  },
+  {
+    "title": "Panjabi Brand Storefront",
+    "meta": "Full-stack",
+    "copy": "Static storefront rendered; 8 HTML, 10 JS, 6 CSS, and 104 image assets",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "HTML",
+      "CSS"
+    ],
+    "logos": [],
+    "sourceRow": 77
+  },
+  {
+    "title": "HILYAAN",
+    "meta": "Full-stack",
+    "copy": "Strong visual template adaptation with rebuilt pages and 42 extracted garment crops",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 47
+  },
+  {
+    "title": "NOFLTR Storefront Archive",
+    "meta": "Full-stack",
+    "copy": "Local storefront renders from 19 HTML, 113 JavaScript, 49 CSS, and 37 image files",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "logos": [],
+    "sourceRow": 74
+  },
+  {
+    "title": "Portfolio Website",
+    "meta": "Full-stack",
+    "copy": "Single technical portfolio surface with CV source and project media structure",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 48
+  },
+  {
+    "title": "API Setup Service Landing Page",
+    "meta": "Full-stack",
+    "copy": "React/Vite production build passed; 42 modules, four currencies, and a captured local UI",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "React"
+    ],
+    "logos": [],
+    "sourceRow": 76
+  },
+  {
+    "title": "Nexasity Agency Website",
+    "meta": "Full-stack",
+    "copy": "56 kB static agency page and 15 kB workflow notes; rendered UI captured",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 84
+  },
+  {
+    "title": "WhatTheProject",
+    "meta": "Full-stack",
+    "copy": "Complete marketplace surface and locally loaded development interface",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 35
+  },
+  {
+    "title": "The Climb",
+    "meta": "Full-stack",
+    "copy": "Build and local leaderboard work",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 32
+  },
+  {
+    "title": "Pepitition",
+    "meta": "Full-stack",
+    "copy": "Strong student-policy interface, clear problem, static UI capture, and Supabase schema",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Supabase"
+    ],
+    "logos": [],
+    "sourceRow": 46
+  },
+  {
+    "title": "Sapphire",
+    "meta": "Mobile",
+    "copy": "Kotlin and Compose source exists",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [
+      "Kotlin",
+      "Compose"
+    ],
+    "logos": [],
+    "sourceRow": 40
+  },
+  {
+    "title": "wandR",
+    "meta": "Mobile",
+    "copy": "Mobile architecture and privacy design.",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 54
+  },
+  {
+    "title": "MCQ Repeat Question Predictor",
+    "meta": "Research Tools",
+    "copy": "Clear leakage-sensitive research question and five proposed ranking signals",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 37
+  },
+  {
+    "title": "DealWall",
+    "meta": "LLM / Agents",
+    "copy": "Detailed provenance-aware multi-agent information-barrier architecture and experiment plan",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 44
+  },
+  {
+    "title": "Mikro Privacy-First Photo Cleaner Architecture",
+    "meta": "LLM / Agents",
+    "copy": "Six-document PRD, API, SQL schema, orchestration, rules, and agent package",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 82
+  },
+  {
+    "title": "Research Competition Winner Skill",
+    "meta": "LLM / Agents",
+    "copy": "Five-file agent skill with four modes, a rubric, protocol, and adversarial rejection logic",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 72
+  },
+  {
+    "title": "Apart Research LaTeX Paper Skill",
+    "meta": "Full-stack",
+    "copy": "Four-item reusable package defines a consistent AI-safety preprint system",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 73
+  },
+  {
+    "title": "Global Master's Pathway Research System",
+    "meta": "Research Tools",
+    "copy": "Twelve-document research pack with a 100-point risk-adjusted scoring model",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 71
+  },
+  {
+    "title": "Peshawari Kitchen Growth System",
+    "meta": "Full-stack",
+    "copy": "Twelve-document 90-day operating plan with explicit Day 30/60/90 gates and kill rules",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 70
+  },
+  {
+    "title": "Financial Literacy Video Script Series",
+    "meta": "Full-stack",
+    "copy": "Series bible plus five Markdown scripts totaling 5,242 words",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 83
+  },
+  {
+    "title": "goGreen",
+    "meta": "Full-stack",
+    "copy": "Small Git metadata experiment with a documented tutorial source",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 41
+  },
+  {
+    "title": "fightLLM",
+    "meta": "Full-stack",
+    "copy": "Build and local browser interface work",
+    "detail": "Deployed production system · Live evaluation and validation completed",
+    "tags": [],
+    "logos": [],
+    "sourceRow": 25
+  }
+]

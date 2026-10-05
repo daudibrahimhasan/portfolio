@@ -26,7 +26,12 @@ const contentTypes = {
 createServer(async (request, response) => {
   try {
     const pathname = decodeURIComponent(new URL(request.url, "http://localhost").pathname);
-    let filePath = resolve(root, `.${pathname}`);
+    if (pathname === "/kiwi/") {
+      response.writeHead(301, { Location: "/kiwi" }).end();
+      return;
+    }
+    // Match the explicit Cloudflare rewrite used by the existing Easter egg.
+    let filePath = resolve(root, /^\/kiwi\/?$/.test(pathname) ? "index.html" : `.${pathname}`);
 
     if (filePath !== root && !filePath.startsWith(`${root}${sep}`)) {
       response.writeHead(403).end("Forbidden");
@@ -42,8 +47,8 @@ createServer(async (request, response) => {
     });
     response.end(body);
   } catch {
-    response.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
-    response.end("Not found");
+    response.writeHead(404, { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex, follow" });
+    response.end(await readFile(resolve(root, "404.html")));
   }
 }).listen(port, "127.0.0.1", () => {
   console.log(`Portfolio running at http://127.0.0.1:${port}`);
