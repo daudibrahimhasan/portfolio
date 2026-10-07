@@ -165,6 +165,9 @@
     const dc = doc.querySelector("x-dc");
     const hostEl = doc.createElement("div");
     hostEl.id = "dc-root";
+    if (doc.getElementById("prerender-content")) {
+      hostEl.style.display = "none";
+    }
     dc.replaceWith(hostEl);
     if (!parsed.preview) {
       const s = doc.createElement("style");
@@ -176,6 +179,8 @@
     function StandaloneRoot() {
       const [, setTick] = React.useState(0);
       React.useEffect(() => {
+        doc.getElementById("prerender-content")?.remove();
+        hostEl.style.display = "";
         const sub = () => setTick((n) => n + 1);
         entry.subs.add(sub);
         return () => {
