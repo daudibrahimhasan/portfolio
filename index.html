@@ -100,7 +100,7 @@
 <meta name="ext-resource-dependency" content="./assets/personal-ai-thumb.webp">
 </head>
 <body>
-<noscript><main><h1>Daud Ibrahim Hassan</h1><p>Useful systems, thoughtful agents, and a little stubbornness about reliability.</p><p><a href="/engineer/">AI Engineer</a> <a href="/researcher/">Student Researcher</a></p></main></noscript>
+<noscript><main><h1>Daud Ibrahim Hassan</h1><p>Useful systems, thoughtful agents, and a little stubbornness about reliability.</p><p><a href="/engineer/?view=overview">AI Engineer</a> <a href="/researcher/?view=overview">Student Researcher</a></p></main></noscript>
 <template id="__bundler_thumbnail">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
     <rect width="200" height="200" fill="#1c1c24"/>
@@ -231,7 +231,7 @@
           <div ref="{{ welcomeTitleLine1Ref }}" style="display:{{ welcomeTitleDisp }}">{{ welcomeTitleLine1Els }}</div>
           <div ref="{{ welcomeTitleLine2Ref }}" style="display:{{ welcomeTitleDisp }}">{{ welcomeTitleLine2Els }}</div>
         </h1>
-        <div style="display:flex;flex-direction:{{ otherBandDir }};align-items:center;justify-content:center;gap:16px"><a href="/engineer/" style-hover="box-shadow:6px 10px 0 rgba(0,0,0,0.05),0 3px 6px rgba(0,0,0,0.05);transform:scale(0.96)" style-focus="outline:none" style="all: unset; position:relative; z-index:50; cursor: pointer; color: #1c1c24; font-weight: 500; font-size: 14px; padding: 14px 26px; border-radius: 8px; background-color: #FFCF3A; transition: box-shadow 0.3s ease, transform 0.25s cubic-bezier(0.4,0,0.2,1)">AI Engineer</a><a href="/researcher/" style-hover="box-shadow:6px 10px 0 rgba(0,0,0,0.05),0 3px 6px rgba(0,0,0,0.05);transform:scale(0.96)" style-focus="outline:none" style="all: unset; position:relative; z-index:50; cursor: pointer; color: #1c1c24; font-weight: 500; font-size: 14px; padding: 14px 26px; border-radius: 8px; background-color: #FFCF3A; transition: box-shadow 0.3s ease, transform 0.25s cubic-bezier(0.4,0,0.2,1)">Student Researcher</a></div>
+        <div style="display:flex;flex-direction:{{ otherBandDir }};align-items:center;justify-content:center;gap:16px"><a href="/engineer/?view=overview" style-hover="box-shadow:6px 10px 0 rgba(0,0,0,0.05),0 3px 6px rgba(0,0,0,0.05);transform:scale(0.96)" style-focus="outline:none" style="all: unset; position:relative; z-index:50; cursor: pointer; color: #1c1c24; font-weight: 500; font-size: 14px; padding: 14px 26px; border-radius: 8px; background-color: #FFCF3A; transition: box-shadow 0.3s ease, transform 0.25s cubic-bezier(0.4,0,0.2,1)">AI Engineer</a><a href="/researcher/?view=overview" style-hover="box-shadow:6px 10px 0 rgba(0,0,0,0.05),0 3px 6px rgba(0,0,0,0.05);transform:scale(0.96)" style-focus="outline:none" style="all: unset; position:relative; z-index:50; cursor: pointer; color: #1c1c24; font-weight: 500; font-size: 14px; padding: 14px 26px; border-radius: 8px; background-color: #FFCF3A; transition: box-shadow 0.3s ease, transform 0.25s cubic-bezier(0.4,0,0.2,1)">Student Researcher</a></div>
       </div>
 
       <div style="position:absolute;inset:0;z-index:38;pointer-events:{{ stickyLayerPointer }};opacity:{{ stickyLayerOpacity }};transition:opacity 0.35s ease">
@@ -300,12 +300,12 @@
     <div style="display:flex;flex-direction:column;gap:10px;opacity:{{ navHeaderOpacity }};transition:opacity 0.55s ease">
       <sc-if value="{{ isNotCase }}" hint-placeholder-val="{{ true }}">
         <div style="display:flex;align-items:flex-start;justify-content:space-between">
-          <button type="button" onClick="{{ goHome }}" onMouseEnter="{{ navNameHoverOn }}" onMouseLeave="{{ navNameHoverOff }}" style="all: unset; cursor: pointer; display: block; font-family: Perfectly Nineties; font-size: 32px; color: #fff; font-weight: 300; letter-spacing: 1px">{{ navNameEls }}</button>
+          <button type="button" aria-current="{{ overviewAriaCurrent }}" aria-label="{{ overviewNavLabel }}" onClick="{{ goHome }}" onMouseEnter="{{ navNameHoverOn }}" onMouseLeave="{{ navNameHoverOff }}" style="all: unset; cursor: pointer; display: block; font-family: Perfectly Nineties; font-size: 32px; color: {{ navNameColor }}; text-shadow:{{ navNameGlow }};transition:color 0.2s ease,text-shadow 0.2s ease; font-weight: 300; letter-spacing: 1px">{{ navNameEls }}</button>
           <div style="display:flex;align-items:center;gap:8px;transform:scale({{ kiwiBtnScale }});transform-origin:right center">
             <sc-if value="{{ kiwiAwake }}" hint-placeholder-val="{{ true }}">
               <x-import component-from-global-scope="KiwiFoodPicker" from="./kiwi-piece.jsx" hint-size="30px,30px"></x-import>
             </sc-if>
-            <x-import component-from-global-scope="KiwiSleepToggle" from="./kiwi-piece.jsx" awake="{{ kiwiAwake }}" on-toggle="{{ toggleKiwiSleep }}" hint-size="30px,30px"></x-import>
+            <a href="/" aria-label="Go to homepage" title="Home" style-hover="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.5)" style-focus="outline:2px solid rgba(255,255,255,0.85);outline-offset:2px" style="box-sizing:content-box;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1.5px solid rgba(255,255,255,0.3);color:#fff;background:transparent;transition:background 0.15s ease,border-color 0.15s ease"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7"></path><path d="M5 9v12h14V9M9 21v-8h6v8"></path></svg></a>
           </div>
         </div>
         <p style="margin: 0; font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size: 12px; letter-spacing: 0.04em; color: rgba(255,255,255,0.75)">NEXASITY AI / BRAC UNIVERSITY</p>
@@ -397,6 +397,9 @@
       <div id="kiwi-food-anchor" style="width:100%;height:0"></div>
 
       <div style="margin-top:auto;padding-top:18px;display:flex;justify-content:flex-start;position:relative">
+        <div style="position:absolute;right:0;bottom:0;transform:scale({{ kiwiBtnScale }});transform-origin:right bottom">
+          <x-import component-from-global-scope="KiwiSleepToggle" from="./kiwi-piece.jsx" awake="{{ kiwiAwake }}" on-toggle="{{ toggleKiwiSleep }}" hint-size="30px,30px"></x-import>
+        </div>
         <button type="button" aria-label="{{ musicLabel }}" onClick="{{ toggleMusic }}" onMouseEnter="{{ onMusicEnter }}" onMouseLeave="{{ onMusicLeave }}" style-hover="opacity:1;transform:scale(1.06)" style-focus="outline:none;opacity:1" style="all:unset;cursor:pointer;box-sizing:border-box;width:{{ musicBtnSize }};height:{{ musicBtnSize }};border-radius:50%;border:1px solid #ffffff;display:flex;align-items:center;justify-content:center;opacity:{{ musicOpacity }};transition:opacity 0.2s ease,transform 0.2s ease">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <path d="M9 18V6.8l10-2v11.4"></path>
@@ -761,6 +764,20 @@
       </section>
     </sc-if>
 
+    <sc-if value="{{ isPersonalOverview }}" hint-placeholder-val="{{ false }}">
+      <section style="padding:48px {{ padH48 }} 56px;max-width:1100px;margin:0 auto;text-align:center">
+        <svg aria-hidden="true" viewBox="0 0 340 100" style="width:320px;max-width:90%;height:100px"><rect x="10" y="34" width="320" height="15" rx="4" fill="#c9a24a"/><path d="M30 49v50M310 49v50" stroke="#a87336" stroke-width="9"/><path d="M65 32h12l3-12H62z" fill="#c56832"/><path d="M71 20V6M71 12Q56 13 59 2Q70 1 71 12M71 9Q81 0 85 4Q82 13 71 13" fill="#3f9a4f" stroke="#3f9a4f"/><path d="M260 17h18l-2 15h-14zM278 19q12 0 5 8h-6M265 13V7M272 13V5" fill="none" stroke="#a87336" stroke-width="1.5"/></svg>
+        <h1 style="font-family:'Perfectly Nineties',serif;font-weight:400;font-size:{{ overviewHeadingSize }};color:{{ theme.heading }};margin:8px 0 18px">What I bring to the table</h1>
+        <p style="font-size:17px;line-height:1.6;color:{{ theme.muted }};max-width:700px;margin:0 auto 32px">I bring a mix of AI engineering, software development and research thinking to turn complicated workflows into useful systems.</p>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px 12px;max-width:960px;margin:0 auto"><sc-for list="{{ overviewSkills }}" as="skill" hint-placeholder-count="15"><span tabindex="0" style-hover="transform: translateY(-4px) rotate(-2.5deg); box-shadow: 3px 5px 0 rgba(0,0,0,0.06), 0 4px 8px rgba(0,0,0,0.08); transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease" style="display:inline-block;cursor:grab;transition:transform 0.2s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.2s ease;padding:10px 14px;background:{{ theme.chip }};border:1px solid {{ theme.borderMd }};border-radius:6px;transform:rotate({{ skill.rotation }}deg);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;letter-spacing:0.5px;text-transform:uppercase;color:{{ theme.heading }}">{{ skill.label }}</span></sc-for></div>
+      </section>
+      <section style="padding:0 {{ padH48 }} 80px;max-width:1100px;margin:0 auto">
+        <div style="background:#ccddff;border-radius:20px;padding:{{ overviewCardPadding }};display:flex;flex-direction:{{ overviewCardDirection }};align-items:center;gap:{{ overviewCardGap }}">
+          <div style="flex:1;min-width:0"><h2 style="font-family:'Perfectly Nineties',serif;font-weight:400;font-size:36px;color:#001568;margin:0 0 18px">Learn more about me!</h2><p style="font-size:15px;line-height:1.6;color:#25364b;margin:0 0 16px">Complex systems are my playground, useful software is my goal.</p><p style="font-size:15px;line-height:1.7;color:#506381;margin:0 0 30px">I'm an AI systems engineer, AI agent developer and founder of Nexasity AI focused on turning complicated workflows into useful software. I build AI agents, RAG systems, voice workflows and evaluation tools, always trying to make the final system clearer, more reliable and easier to use.</p><button type="button" onClick="{{ goAbout }}" style="border:0;background:#ffd43b;color:#111;border-radius:9px;padding:16px 26px;font-family:inherit;font-size:14px;cursor:pointer">Learn More</button></div>
+          <img src="/assets/daud-ocean-portrait.png" alt="Daud Ibrahim Hassan on a sunny coastal pier" width="1122" height="1402" decoding="async" style="width:{{ overviewPhotoWidth }};max-width:100%;height:auto;aspect-ratio:0.78;object-fit:cover;object-position:center;border-radius:20px;transform:rotate(-2deg);flex-shrink:0">
+        </div>
+      </section>
+    </sc-if>
     <sc-if value="{{ photoTooltip }}" hint-placeholder-val="{{ false }}">
       <div style="position:fixed;left:{{ photoTooltip.x }}px;top:{{ photoTooltip.y }}px;transform:translate(-50%,-140%);background:#1c1c24;color:#f7f2e8;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;letter-spacing:0.5px;padding:9px 16px;border-radius:12px;white-space:nowrap;pointer-events:none;z-index:200">{{ photoTooltip.text }}</div>
     </sc-if>
@@ -3819,6 +3836,17 @@ class Component extends DCLogic {
       toggleMobileMenu: () => this.toggleMobileMenu(),
       closeMobileMenu: () => this.closeMobileMenu(),
       isHome: s.view === 'home',
+      isPersonalOverview: s.view === 'overview',
+      overviewAriaCurrent: s.view === 'overview' ? 'page' : 'false',
+      overviewNavLabel: s.view === 'overview' ? 'Daud I., Overview, current page' : 'Daud I., open Overview',
+      navNameColor: s.navNameHover || s.view === 'overview' ? '#fff0a8' : '#fff',
+      navNameGlow: s.navNameHover || s.view === 'overview' ? '0 0 14px rgba(255,212,59,0.45)' : 'none',
+      overviewHeadingSize: s.isMobile ? '36px' : '44px',
+      overviewCardPadding: s.isMobile ? '28px 24px' : '48px',
+      overviewCardDirection: s.isMobile ? 'column' : 'row',
+      overviewCardGap: s.isMobile ? '36px' : '80px',
+      overviewPhotoWidth: s.isMobile ? '100%' : '43%',
+      overviewSkills: ['AI Agent Development','RAG Systems','LLM Integration','Voice Agents','Python','FastAPI','React','TypeScript','Multi-Agent Systems','MCP','AI Evaluation','Human-in-the-Loop Workflows','Machine Learning','Software Engineering','Research Engineering'].map((label,i) => ({label,rotation:[-3,2,-2,0,1][i%5]})),
       isWork: s.view === 'work',
       isPlayground: s.view === 'playground',
       isAbout: s.view === 'about',
@@ -4033,7 +4061,7 @@ class Component extends DCLogic {
       photoHoverBaking: (e) => this.setPhotoTooltip('I love baking!', e),
       photoHoverGolf: (e) => this.setPhotoTooltip('Former golfer, but still love a good range sesh', e),
       photoHoverOff: () => this.setState({ photoTooltip: null }),
-      goHome: () => this.navigate('home'),
+      goHome: () => { this.setState({ navExpanded: null }); this.navigate('overview'); },
       goWork: () => this.navigate('work'),
       goAbout: () => { this.playClickSound(); this.navigate('about'); },
       goWhatIBring: () => this.scrollToWhatIBring(),
